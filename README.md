@@ -11,12 +11,12 @@ Realizacja zadań odbywa się w obrębie przydzielonych grup:
 ## Schemat gałęzi
 ```text
 main (wersja główna/stabilna)
- └── zad1 (gałąź nadrzędna dla Zadania 1)
-      ├── zad1-gr1 (praca Grupy 1 nad Zadaniem 1)
-      ├── zad1-gr2 (praca Grupy 2 nad Zadaniem 1)
-      ├── zad1-gr3 (praca Grupy 3 nad Zadaniem 1)
-      └── zad1-gr4 (praca Grupy 4 nad Zadaniem 1)
- └── zad2 (gałąź nadrzędna dla Zadania 2)
+ └── zad1 (gałąź nadrzędna dla zadania 1)
+      ├── zad1-gr1 (praca grupy 1 nad zadaniem 1)
+      ├── zad1-gr2 (praca grupy 2 nad zadaniem 1)
+      ├── zad1-gr3 (praca grupy 3 nad zadaniem 1)
+      └── zad1-gr4 (praca grupy 4 nad zadaniem 1)
+ └── zad2 (gałąź nadrzędna dla zadania 2)
       ├── zad2-gr1
       ├── zad2-gr2
       └── ...
