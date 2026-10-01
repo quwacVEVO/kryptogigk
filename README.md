@@ -12,20 +12,20 @@ Realizacja zadań odbywa się w obrębie przydzielonych grup:
 ```text
 main (wersja główna/stabilna)
  └── zad1 (gałąź nadrzędna dla Zadania 1)
-      ├── zad1/gr1 (praca Grupy 1 nad Zadaniem 1)
-      ├── zad1/gr2 (praca Grupy 2 nad Zadaniem 1)
-      ├── zad1/gr3 (praca Grupy 3 nad Zadaniem 1)
-      └── zad1/gr4 (praca Grupy 4 nad Zadaniem 1)
+      ├── zad1-gr1 (praca Grupy 1 nad Zadaniem 1)
+      ├── zad1-gr2 (praca Grupy 2 nad Zadaniem 1)
+      ├── zad1-gr3 (praca Grupy 3 nad Zadaniem 1)
+      └── zad1-gr4 (praca Grupy 4 nad Zadaniem 1)
  └── zad2 (gałąź nadrzędna dla Zadania 2)
-      ├── zad2/gr1
-      ├── zad2/gr2
+      ├── zad2-gr1
+      ├── zad2-gr2
       └── ...
  └── ....
 ```
 
 1. **`main`** - oficjalna, ostateczna i stabilna wersja projektu. Bezpośrednio na niej nie commitujemy.
 2. **`zadX`** (np. `zad1`, `zad2`, ...) - gałąź bazowa dla danego zadania `X`, tworzona na podstawie `main`.
-3. **`zadX/gr1`, `zadX/gr2`, `zadX/gr3`, `zadX/gr4`** - gałęzie robocze dla poszczególnych podgrup tworzone **bezpośrednio z gałęzi `zadX`**.
+3. **`zadX-gr1`, `zadX-gr2`, `zadX-gr3`, `zadX-gr4`** - gałęzie robocze dla poszczególnych podgrup tworzone **bezpośrednio z gałęzi `zadX`**.
 
 ---
 
@@ -79,15 +79,15 @@ git pull origin zadX
 ### B. Praca na gałęzi grupy (`gr1`, `gr2`, `gr3`, `gr4`)
 Jeśli gałąź grupy już istnieje na zdalnym repozytorium:
 ```cmd
-git checkout grX
-git pull origin grX
+git checkout zadX-grX
+git pull origin zadX-grX
 ```
 *(Zastąp `grX` numerem grupy, w której obecnie pracujesz, np. `gr1`)*
 
 Jeśli zakładasz gałąź swojej grupy jako pierwszy (odgałęziasz od `zadX`):
 1. Będąc na gałęzi `zadX`, utwórz nową gałąź i od razu się na nią przełącz:
    ```cmd
-   git checkout -b grX
+   git checkout -b zadX-grX
    ```
 
 ---
@@ -116,7 +116,7 @@ Gdy wprowadzisz zmiany w kodzie:
 5. Wyślij zmiany na GitHub:
    - **pierwszy push do nowo utworzonej gałęzi:**
      ```cmd
-     git push -u origin grX
+     git push -u origin zadX-grX
      ```
    - **każde kolejne wysłanie zmian:**
      ```cmd
@@ -128,7 +128,7 @@ Gdy wprowadzisz zmiany w kodzie:
 ## 4. Scalanie (merge) i zgłaszanie ukończonych zadań
 Gdy zadanie grupy jest ukończone, przetestowane i gotowe do wdrożenia:
 1. Upewnij się, że wszystkie commity są zpushowane do GitHuba (`git push`).
-2. Zgłoś ukończenie zadania lub utwórz **Pull Request** na GitHubie z gałęzi `grX` do gałęzi nadrzędnej `zadX`.
+2. Zgłoś ukończenie zadania lub utwórz **Pull Request** na GitHubie z gałęzi `zadX-grX` do gałęzi nadrzędnej `zadX`.
 
 ---
 
