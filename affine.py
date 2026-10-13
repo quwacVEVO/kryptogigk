@@ -3,7 +3,7 @@
 ALFA26 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 ALFA37 = f"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\n"
 
-def affine_encrypt(plain: str, mode: str, A: int, B: int) -> str:
+def affine_encrypt(plain: str, A: int, B: int, mode: str) -> str:
     if mode != "alfa_26" and mode != "alfa_37":
         raise Exception("Mode not supported!")
 
@@ -20,12 +20,20 @@ def affine_encrypt(plain: str, mode: str, A: int, B: int) -> str:
         return cipher
 
 
-def affine_decript(cipher: str, A: int, B: int) -> str:
-    plain = ""
-    for k in cipher:
-        C = pow(A,-1,26)
-        num = C * ((ord(k) - 65) - B) % 26
-        plain += ALFA26[num]
-    return plain
+def affine_decrypt(cipher: str, A: int, B: int, mode: str) -> str:
+    if mode != "alfa_26" and mode != "alfa_37":
+        raise Exception("Mode not supported!")
 
-print(affine_decript(affine_encrypt(ALFA26,"alfa_26", 3, 4), 3, 4))
+    plain = ""
+    if mode == "alfa_26":
+        for k in cipher:
+            C = pow(A,-1,26)
+            num = C * (ALFA26.index(k) - B) % 26
+            plain += ALFA26[num]
+        return plain
+    else:
+        for k in cipher:
+            C = pow(A,-1,37)
+            num = C * (ALFA37.index(k) - B) % 37
+            plain += ALFA37[num]
+        return plain
