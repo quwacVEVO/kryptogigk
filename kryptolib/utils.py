@@ -34,7 +34,8 @@ def alfa_26(text: str) -> str:
 def alfa_37(text: str) -> str:
     text = to_uppercase(text)
     text = remove_diacritics(text)
-    return "".join(c for c in text if c.isalnum() or c.isspace())
+    text = " ".join(text.split())
+    return "".join(c for c in text if c.isalnum() or c == " ")
 
 def read_file(file_path: str) -> str:
     with open(file_path, 'r', encoding='utf-8') as f:
