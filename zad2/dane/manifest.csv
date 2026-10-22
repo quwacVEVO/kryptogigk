@@ -1,0 +1,9 @@
+nazwa_pliku,alfabet,liczba_znakow
+cipher01_alfa26_2k.txt,ALFA26,2056
+cipher02_alfa26_2k.txt,ALFA26,1843
+cipher03_alfa26_30k.txt,ALFA26,30131
+cipher04_alfa26_30k.txt,ALFA26,30002
+cipher05_alfa37_2k.txt,ALFA37,1947
+cipher06_alfa37_2k.txt,ALFA37,2034
+cipher07_alfa37_30k.txt,ALFA37,30186
+cipher08_alfa37_30k.txt,ALFA37,29994
