@@ -38,13 +38,14 @@ def roznica_kwadratowa(sciezka1: str, sciezka2: str):
     return sum((a.get(k, 0) - b.get(k, 0)) ** 2 for k in wszystkie_klucze)
 
 def wykryj_alfabet(text: str):
+    ''' Uwaga! Zakładamy, że alfabety alfa26 i alfa37 używają wyłącznie wielkich liter.'''
     znaki = string.ascii_uppercase + " " + string.digits
     slownik = dict.fromkeys(znaki, 0)
 
     for znak in text:
         if znak in znaki:
             slownik[znak] += 1
-        else: raise ValueError("Tekst nie występują ani w alfabecie ALFA26, ani ALFA37!")
+        else: raise ValueError("Tekst nie wystepuje ani w alfabecie ALFA26, ani ALFA37!")
 
     znaki_alfa37 = " " + string.digits
     for znak in znaki_alfa37:
@@ -67,11 +68,11 @@ def wykryj_jezyk(text: str, mode: str = "alfa26"):
         #bigramy
         sciezka1 = f"{folder1}/alfa26_bigramy.json"
         sciezka2 = f"{folder2}/alfa26_bigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_bigramy = roznica_kwadratowa(sciezka1, sciezka2)
         #trigramy
         sciezka1 = f"{folder1}/alfa26_trigramy.json"
         sciezka2 = f"{folder2}/alfa26_trigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_trigramy = roznica_kwadratowa(sciezka1, sciezka2)
 
         suma_ang = suma_unigramy + suma_bigramy + suma_trigramy
 
@@ -83,11 +84,11 @@ def wykryj_jezyk(text: str, mode: str = "alfa26"):
         #bigramy
         sciezka1 = f"{folder1}/alfa26_bigramy.json"
         sciezka2 = f"{folder3}/alfa26_bigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_bigramy = roznica_kwadratowa(sciezka1, sciezka2)
         #trigramy
         sciezka1 = f"{folder1}/alfa26_trigramy.json"
         sciezka2 = f"{folder3}/alfa26_trigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_trigramy = roznica_kwadratowa(sciezka1, sciezka2)
 
         suma_pl = suma_unigramy + suma_bigramy + suma_trigramy
 
@@ -105,11 +106,11 @@ def wykryj_jezyk(text: str, mode: str = "alfa26"):
         #bigramy
         sciezka1 = f"{folder1}/alfa37_bigramy.json"
         sciezka2 = f"{folder2}/alfa37_bigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_bigramy = roznica_kwadratowa(sciezka1, sciezka2)
         #trigramy
         sciezka1 = f"{folder1}/alfa37_trigramy.json"
         sciezka2 = f"{folder2}/alfa37_trigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_trigramy = roznica_kwadratowa(sciezka1, sciezka2)
         #początki słów
         sciezka1 = f"{folder1}/alfa37_poczatki_slow.json"
         sciezka2 = f"{folder2}/alfa37_poczatki_slow.json"
@@ -129,11 +130,11 @@ def wykryj_jezyk(text: str, mode: str = "alfa26"):
         #bigramy
         sciezka1 = f"{folder1}/alfa37_bigramy.json"
         sciezka2 = f"{folder3}/alfa37_bigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_bigramy = roznica_kwadratowa(sciezka1, sciezka2)
         #trigramy
         sciezka1 = f"{folder1}/alfa37_trigramy.json"
         sciezka2 = f"{folder3}/alfa37_trigramy.json"
-        suma_unigramy = roznica_kwadratowa(sciezka1, sciezka2)
+        suma_trigramy = roznica_kwadratowa(sciezka1, sciezka2)
         #początki słów
         sciezka1 = f"{folder1}/alfa37_poczatki_slow.json"
         sciezka2 = f"{folder3}/alfa37_poczatki_slow.json"
@@ -145,7 +146,12 @@ def wykryj_jezyk(text: str, mode: str = "alfa26"):
 
         suma_pl = suma_unigramy + suma_bigramy + suma_trigramy + suma_poczatki_slow + suma_konce_slow
 
+        print(suma_ang)
+        print(suma_pl)
+
         if (suma_ang < suma_pl): return "angielski"
         else: return "polski"
     
     else: raise ValueError(f"Mode musi wynosić alfa26 lub alfa37.")
+
+
