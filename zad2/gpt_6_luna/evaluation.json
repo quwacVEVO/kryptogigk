@@ -1,0 +1,254 @@
+[
+  {
+    "ciphertext": "cipher1_alfa26_2k.txt",
+    "mode": "ALFA26",
+    "characters": 2000,
+    "true_language_after_attack": "pl",
+    "selected_language": "pl",
+    "language_selected_correctly": true,
+    "score_pl": -24.222996,
+    "score_en": -29.053607,
+    "accuracy_if_pl_model": 77.75,
+    "accuracy_if_en_model": 12.75,
+    "selected_candidate_accuracy_percent": 77.75,
+    "selected_mapping_correct": 15,
+    "selected_mapping_observed_symbols": 23,
+    "selected_mapping_accuracy_percent": 65.217,
+    "both_language_attacks_seconds": 14.2891,
+    "selected_classes_percent": {
+      "letters": 77.75,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_accuracy_percent": 99.85,
+    "refined_classes_percent": {
+      "letters": 99.85,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_mapping_correct": 22,
+    "refined_mapping_accuracy_percent": 95.652,
+    "refinement_seconds": 34.8938,
+    "previous_best_accuracy_percent": 100.0
+  },
+  {
+    "ciphertext": "cipher2_alfa26_30k.txt",
+    "mode": "ALFA26",
+    "characters": 30000,
+    "true_language_after_attack": "pl",
+    "selected_language": "pl",
+    "language_selected_correctly": true,
+    "score_pl": -22.647188,
+    "score_en": -29.309927,
+    "accuracy_if_pl_model": 84.147,
+    "accuracy_if_en_model": 0.0,
+    "selected_candidate_accuracy_percent": 84.147,
+    "selected_mapping_correct": 16,
+    "selected_mapping_observed_symbols": 23,
+    "selected_mapping_accuracy_percent": 69.565,
+    "both_language_attacks_seconds": 14.1403,
+    "selected_classes_percent": {
+      "letters": 84.147,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_accuracy_percent": 100.0,
+    "refined_classes_percent": {
+      "letters": 100.0,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_mapping_correct": 23,
+    "refined_mapping_accuracy_percent": 100.0,
+    "refinement_seconds": 41.1832,
+    "previous_best_accuracy_percent": 99.357
+  },
+  {
+    "ciphertext": "cipher3_alfa26_2k.txt",
+    "mode": "ALFA26",
+    "characters": 2000,
+    "true_language_after_attack": "en",
+    "selected_language": "en",
+    "language_selected_correctly": true,
+    "score_pl": -28.432576,
+    "score_en": -27.946369,
+    "accuracy_if_pl_model": 10.05,
+    "accuracy_if_en_model": 48.1,
+    "selected_candidate_accuracy_percent": 48.1,
+    "selected_mapping_correct": 7,
+    "selected_mapping_observed_symbols": 26,
+    "selected_mapping_accuracy_percent": 26.923,
+    "both_language_attacks_seconds": 35.6018,
+    "selected_classes_percent": {
+      "letters": 48.1,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_accuracy_percent": 100.0,
+    "refined_classes_percent": {
+      "letters": 100.0,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_mapping_correct": 26,
+    "refined_mapping_accuracy_percent": 100.0,
+    "refinement_seconds": 45.7062
+  },
+  {
+    "ciphertext": "cipher4_alfa26_30k.txt",
+    "mode": "ALFA26",
+    "characters": 30000,
+    "true_language_after_attack": "en",
+    "selected_language": "en",
+    "language_selected_correctly": true,
+    "score_pl": -27.857702,
+    "score_en": -16.112107,
+    "accuracy_if_pl_model": 1.573,
+    "accuracy_if_en_model": 100.0,
+    "selected_candidate_accuracy_percent": 100.0,
+    "selected_mapping_correct": 26,
+    "selected_mapping_observed_symbols": 26,
+    "selected_mapping_accuracy_percent": 100.0,
+    "both_language_attacks_seconds": 11.2679,
+    "selected_classes_percent": {
+      "letters": 100.0,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_accuracy_percent": 100.0,
+    "refined_classes_percent": {
+      "letters": 100.0,
+      "digits": null,
+      "spaces": null
+    },
+    "refined_mapping_correct": 26,
+    "refined_mapping_accuracy_percent": 100.0,
+    "refinement_seconds": 29.6674
+  },
+  {
+    "ciphertext": "cipher5_alfa37_2k.txt",
+    "mode": "ALFA37",
+    "characters": 2000,
+    "true_language_after_attack": "pl",
+    "selected_language": "pl",
+    "language_selected_correctly": true,
+    "score_pl": -25.579829,
+    "score_en": -29.792082,
+    "accuracy_if_pl_model": 71.05,
+    "accuracy_if_en_model": 17.65,
+    "selected_candidate_accuracy_percent": 71.05,
+    "selected_mapping_correct": 14,
+    "selected_mapping_observed_symbols": 29,
+    "selected_mapping_accuracy_percent": 48.276,
+    "both_language_attacks_seconds": 8.6938,
+    "selected_classes_percent": {
+      "letters": 66.864,
+      "digits": 5.263,
+      "spaces": 100.0
+    },
+    "refined_accuracy_percent": 98.5,
+    "refined_classes_percent": {
+      "letters": 99.35,
+      "digits": 0.0,
+      "spaces": 100.0
+    },
+    "refined_mapping_correct": 21,
+    "refined_mapping_accuracy_percent": 72.414,
+    "refinement_seconds": 22.1424,
+    "previous_best_accuracy_percent": 77.2
+  },
+  {
+    "ciphertext": "cipher6_alfa37_30k.txt",
+    "mode": "ALFA37",
+    "characters": 30000,
+    "true_language_after_attack": "pl",
+    "selected_language": "pl",
+    "language_selected_correctly": true,
+    "score_pl": -28.545365,
+    "score_en": -30.075687,
+    "accuracy_if_pl_model": 41.683,
+    "accuracy_if_en_model": 18.763,
+    "selected_candidate_accuracy_percent": 41.683,
+    "selected_mapping_correct": 9,
+    "selected_mapping_observed_symbols": 33,
+    "selected_mapping_accuracy_percent": 27.273,
+    "both_language_attacks_seconds": 6.3467,
+    "selected_classes_percent": {
+      "letters": 31.724,
+      "digits": 44.186,
+      "spaces": 100.0
+    },
+    "refined_accuracy_percent": 99.023,
+    "refined_classes_percent": {
+      "letters": 99.635,
+      "digits": 6.977,
+      "spaces": 100.0
+    },
+    "refined_mapping_correct": 23,
+    "refined_mapping_accuracy_percent": 69.697,
+    "refinement_seconds": 47.5312,
+    "previous_best_accuracy_percent": 99.283
+  },
+  {
+    "ciphertext": "cipher7_alfa37_2k.txt",
+    "mode": "ALFA37",
+    "characters": 2000,
+    "true_language_after_attack": "en",
+    "selected_language": "en",
+    "language_selected_correctly": true,
+    "score_pl": -28.481331,
+    "score_en": -24.874843,
+    "accuracy_if_pl_model": 19.25,
+    "accuracy_if_en_model": 67.25,
+    "selected_candidate_accuracy_percent": 67.25,
+    "selected_mapping_correct": 11,
+    "selected_mapping_observed_symbols": 32,
+    "selected_mapping_accuracy_percent": 34.375,
+    "both_language_attacks_seconds": 5.5156,
+    "selected_classes_percent": {
+      "letters": 60.472,
+      "digits": 0.0,
+      "spaces": 100.0
+    },
+    "refined_accuracy_percent": 98.5,
+    "refined_classes_percent": {
+      "letters": 99.316,
+      "digits": 0.0,
+      "spaces": 100.0
+    },
+    "refined_mapping_correct": 25,
+    "refined_mapping_accuracy_percent": 78.125,
+    "refinement_seconds": 12.5872
+  },
+  {
+    "ciphertext": "cipher8_alfa37_30k.txt",
+    "mode": "ALFA37",
+    "characters": 30000,
+    "true_language_after_attack": "en",
+    "selected_language": "en",
+    "language_selected_correctly": true,
+    "score_pl": -29.101395,
+    "score_en": -28.672489,
+    "accuracy_if_pl_model": 47.56,
+    "accuracy_if_en_model": 47.983,
+    "selected_candidate_accuracy_percent": 47.983,
+    "selected_mapping_correct": 7,
+    "selected_mapping_observed_symbols": 36,
+    "selected_mapping_accuracy_percent": 19.444,
+    "both_language_attacks_seconds": 7.0132,
+    "selected_classes_percent": {
+      "letters": 36.82,
+      "digits": 0.0,
+      "spaces": 100.0
+    },
+    "refined_accuracy_percent": 98.603,
+    "refined_classes_percent": {
+      "letters": 99.086,
+      "digits": 0.0,
+      "spaces": 100.0
+    },
+    "refined_mapping_correct": 24,
+    "refined_mapping_accuracy_percent": 66.667,
+    "refinement_seconds": 15.6628
+  }
+]
