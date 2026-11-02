@@ -7,7 +7,7 @@ Basic scope: Vigenere and Hill encryption/decryption, ALFA26 and file input/outp
 - `vigenere.py`: encryption and decryption.
 - `hill.py`: encryption and decryption, including the inverse matrix modulo 26.
 - `handler.py`: step-by-step console prompts, files and text/key preparation.
-- `kryptolib/`: shared library from `origin/zad1-gr1`, commit `9c3a3ac`.
+- `../kryptolib/`: shared library from `origin/zad1-gr1`, commit `9c3a3ac`.
 
 The handler uses the existing `alfa_26`, `read_file` and `write_file` functions.
 The final filter in `alfa_26` was changed from `isalpha()` to
@@ -21,8 +21,14 @@ Use Python 3.8 or newer. No external packages are needed.
 Open a terminal in `lab/kryptogigk` and run:
 
 ```powershell
-python handler.py
+python -m polyalphabetic.handler
 ```
+
+Run this command from the repository root, not from `polyalphabetic`.
+Both `polyalphabetic` and `kryptolib` are Python packages in that root.
+In PyCharm, mark `lab/kryptogigk` as Sources Root. For a run configuration,
+choose module name `polyalphabetic.handler` and use `lab/kryptogigk` as the
+working directory. The local project configuration includes this source root.
 
 Answer the prompts in order, for example:
 
@@ -60,19 +66,13 @@ A-Z input. Hill ciphertext length must be a multiple of the matrix size.
 This basic implementation assumes valid files and keys; invalid input may
 raise a Python exception.
 
-## Branches and shared code
+## Generated ciphertexts
 
-The implementation belongs to `zad3-gr2`. No changes were committed to
-`zad1-gr3`. The three scripts in `resources/lab3/grupa2_szyfry` are also
-updated; use the repository versions for further development.
-
-On 2026-11-02, GitHub references `zad3-gr2` through `zad3-gr5` all pointed
-to `7220fd3`, containing only README and .gitignore. The shared library was
-available on `zad1-gr1`. Its files were imported here with the ALFA26 fix
-described above; this does not merge the old branch history.
-
-Only this shared library is needed for these ciphers. The lab1 ciphers and
-lab2 attack tools are not dependencies. The coordinating group can later
-integrate the shared library on `main` or a common integration branch.
-A direct merge of `origin/zad1-gr1` into the original `zad3-gr2` produces
-a README conflict: keep the lab3 instructions and retain the ALFA26 fix.
+There are 16 cases in `samples/ciphertexts`: Polish and English, Hill and
+Vigenere, lengths of 2000 and 30000 ALFA26 characters, two cases per combination.
+Language folders are named `pl` and `en`; files are named, for example,
+`cipher_hill_2k_01.txt`. See `samples/README.md` for the complete structure.
+The 16 ALFA26 plaintexts, 16 keys and a case manifest are stored outside the
+repository in the workspace's `resources/lab3/private_cases` directory.
+These replace the previous samples. Keep verification files private until
+the attacks are finished.

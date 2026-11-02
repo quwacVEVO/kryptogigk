@@ -2,8 +2,7 @@
 
 from math import isqrt
 
-import hill
-import vigenere
+from polyalphabetic import hill, vigenere
 from kryptolib.utils import alfa_26, read_file, write_file
 
 
