@@ -1,6 +1,18 @@
 """Hill cipher. Text: A-Z. Key: a square matrix invertible modulo 26."""
 
+from math import isqrt
+
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
+# CHECK IF THE KEY IS ELIGIBLE
+def parse_key(key):
+    # Read matrix entries row by row, ignoring line breaks.
+    numbers = [int(number) for number in key.split()]
+    size = isqrt(len(numbers))
+    if size == 0 or size * size != len(numbers):
+        raise ValueError("Hill key must be a square matrix of integers.")
+    return [numbers[i:i + size] for i in range(0, len(numbers), size)]
 
 
 def minor(matrix, i, j):

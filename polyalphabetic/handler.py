@@ -1,41 +1,58 @@
 """Choose a cipher, read input files and save the result."""
 
-from math import isqrt
-
 from polyalphabetic import hill, vigenere
-from kryptolib.utils import alfa_26, read_file, write_file
+from kryptolib.utils import alfa_26, alfa_37, read_file, write_file
 
+# name -> (normalising function, alphabet)
+ALPHABETS = {
+    "26": (alfa_26, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"),
+    "37": (alfa_37, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "),
+}
 
-def main():
+def run():
     cipher_name = input("Choose a cipher (vigenere/hill): ").strip().lower()
     mode = input("Choose a mode (e = encrypt, d = decrypt): ").strip().lower()
-    if cipher_name not in ("vigenere", "hill") or mode not in ("e", "d"):
-        print("Unknown cipher or mode.")
-        return
+    alphabet_name = input("Choose an alphabet (26/37) [26]: ").strip() or "26"
+
+    ######################
+    # INPUT ERROR HANDLING
+    if cipher_name not in ("vigenere", "hill") or mode not in ("e", "d") \
+            or alphabet_name not in ALPHABETS:
+        raise ValueError("Unknown cipher, mode or alphabet.")
+    normalize, alphabet = ALPHABETS[alphabet_name]
 
     input_file = input("Enter the input file name: ").strip()
     key_file = input("Enter the key file name: ").strip()
     output_file = input("Enter the output file name: ").strip()
 
-    text = alfa_26(read_file(input_file))
+    ######################
+    # CIPHER TYPE HANDLING
+    text = normalize(read_file(input_file))
     key = read_file(key_file)
     if cipher_name == "vigenere":
         cipher = vigenere
-        key = alfa_26(key)
+        key = normalize(key)
     else:
         cipher = hill
-        # Read matrix entries row by row, ignoring line breaks.
-        numbers = [int(number) for number in key.split()]
-        size = isqrt(len(numbers))
-        key = [numbers[i:i + size] for i in range(0, len(numbers), size)]
+        key = hill.parse_key(key)
 
+    #############################
+    # TEXT AND KEY ERROR HANDLING
+    if not text or not key:
+        raise ValueError("Text and key must not be empty.")
+    if not set(text) <= set(alphabet) or \
+            (cipher_name == "vigenere" and not set(key) <= set(alphabet)):
+        raise ValueError("Text or key has characters outside the alphabet.")
+
+    #######################
+    # ENCRYPTING/DECRYPTING
     if mode == "e":
-        result = cipher.encrypt(text, key)
+        result = cipher.encrypt(text, key, alphabet)
     else:
-        result = cipher.decrypt(text, key)
+        result = cipher.decrypt(text, key, alphabet)
     write_file(output_file, result)
     print("Result saved to:", output_file)
 
 
 if __name__ == "__main__":
-    main()
+    run()
