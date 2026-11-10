@@ -1,0 +1,2 @@
+Klucz literowy (konwencja kolumnowa): ZVZQ
+Klucz literowy (konwencja wierszowa):  ZZVQ

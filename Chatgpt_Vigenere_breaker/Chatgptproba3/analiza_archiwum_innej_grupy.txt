@@ -1,0 +1,20 @@
+Analiza archiwum szyfrogramow innej grupy
+
+Archiwum zawiera 8 plikow alfa26: 4 x 2000 znakow i 4 x 30000 znakow.
+Wszystkie pliki znormalizowano do alfabetu a-z. Dla kazdego pliku obliczono sredni indeks koincydencji kolumn dla kandydatur dlugosci klucza 1-40 oraz glosy testu Kasiski. Tabela podaje trzy najwyzej ocenione kandydatury w rankingu programu: okres; sredni IC kolumn; liczba glosow Kasiski.
+
+Plik              N       Kandydatury (r; IC; glosy Kasiski)
+cipher 2k 01      2000    5; 0.05737; 1107 | 10; 0.05708; 576 | 20; 0.05801; 383
+cipher 2k 02      2000    8; 0.05942; 504  | 24; 0.05823; 159 | 40; 0.05922; 87
+cipher 2k 03      2000    5; 0.06440; 1248 | 10; 0.06479; 533 | 25; 0.06576; 297
+cipher 2k 04      2000    8; 0.06430; 906  | 16; 0.06457; 471 | 40; 0.06533; 250
+cipher 30k 01     30000   5; 0.05712; 52432 | 10; 0.05715; 26212 | 15; 0.05708; 17110
+cipher 30k 02     30000   8; 0.05708; 45230 | 16; 0.05702; 22339 | 24; 0.05711; 14821
+cipher 30k 03     30000   5; 0.06476; 57190 | 10; 0.06481; 29685 | 15; 0.06478; 19271
+cipher 30k 04     30000   8; 0.06413; 43541 | 16; 0.06411; 21625 | 24; 0.06415; 14294
+
+Wniosek:
+W osmiu plikach widac kandydatury okresu podstawowego 5 albo 8 i ich wielokrotnosci. Dla plikow 30000 znakow liczba glosow Kasiski jest znacznie wieksza, co wynika z wiekszej liczby powtorzen. Sredni IC dla wielu wielokrotnosci jest zblizony; sam IC nie zawsze odroznia okres podstawowy od wielokrotnosci.
+
+Ograniczenie:
+Archiwum nie zawiera tekstow jawnych ani kluczy. Nie mozna wiec wyliczyc procentowej skutecznosci odzyskania klucza ani potwierdzic, ktora kandydatura jest prawdziwa. Sa to wyniki diagnostyczne, nie potwierdzone zlamania.

@@ -1,0 +1,190 @@
+2026-11-05 08:40:06,838 [INFO] Rozpoczęto działanie programu kryptoanalizy.
+2026-11-05 08:40:32,861 [INFO] Automatycznie rozpoznano wymiar 2x2 (długość podzielna przez 2, a nie przez 3).
+2026-11-05 08:40:32,891 [INFO] Odszyfrowana wiadomość: cddlaqueorecgoorfledtenaue
+2026-11-05 08:40:32,891 [INFO] Wyniki zapisano w katalogu: 'rozwiązania'
+2026-11-05 08:40:32,891 [INFO] Zakończono powodzeniem.
+2026-11-05 08:48:16,493 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-05 08:48:47,503 [INFO] Odczytano szyfrogram o długości 26 znaków.
+2026-11-05 08:48:47,505 [INFO] Wykryto wymiar 2x2. Uruchamianie pełnego przeszukania 157 248 kluczy...
+2026-11-05 08:48:48,232 [INFO] Najlepszy odszyfrowany tekst: ebtvecokonuikconthenbenaok
+2026-11-05 08:48:48,232 [INFO] Pliki wynikowe zapisano do folderu: 'rozwiązania'
+2026-11-05 08:48:48,232 [INFO] Zakończono powodzeniem.
+2026-11-05 08:55:31,909 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-05 08:55:56,637 [INFO] Odczytano szyfrogram o długości 26 znaków.
+2026-11-05 08:55:56,637 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-05 08:55:57,400 [INFO] Odszyfrowany tekst: tajnawiadomoscdoprzeslania
+2026-11-05 08:55:57,400 [INFO] Rozpoznane słowa: ['DO', 'TAJNA', 'WIADOMOSC', 'DOM', 'NA', 'ZE']
+2026-11-05 08:55:57,401 [INFO] Pliki wynikowe zapisano do folderu: 'rozwiązania'
+2026-11-05 08:55:57,401 [INFO] Zakończono sukcesem.
+2026-11-05 08:56:06,924 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-05 08:56:16,815 [INFO] Odczytano szyfrogram o długości 27 znaków.
+2026-11-05 08:56:16,815 [INFO] Automatycznie wybrano wymiar macierzy: 3x3.
+2026-11-05 08:56:17,405 [INFO] Odszyfrowany tekst: tajnawiadomoscdoprzeslaniax
+2026-11-05 08:56:17,406 [INFO] Rozpoznane słowa: ['TAJNA', 'ZE', 'DOM', 'DO', 'NA', 'WIADOMOSC']
+2026-11-05 08:56:17,406 [INFO] Pliki wynikowe zapisano do folderu: 'rozwiązania'
+2026-11-05 08:56:17,406 [INFO] Zakończono sukcesem.
+2026-11-05 09:03:55,659 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-05 09:04:33,309 [INFO] Odczytano szyfrogram o długości 26 znaków.
+2026-11-05 09:04:33,309 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-05 09:04:34,057 [INFO] Odszyfrowany tekst (bez paddingu): tajnawiadomoscdoprzeslania
+2026-11-05 09:04:34,058 [INFO] Rozpoznane słowa: ['DOM', 'WIADOMOSC', 'TAJNA', 'ZE', 'NA', 'DO']
+2026-11-05 09:04:34,058 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-05 09:04:34,058 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-05 09:04:34,058 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-05 09:04:34,058 [INFO] Zakończono sukcesem.
+2026-11-05 09:04:47,147 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-05 09:04:59,618 [ERROR] Plik nie istnieje: C:\Users\turul\Pulpit\ai\hill_szyfrogram_3.txt
+2026-11-05 09:05:09,547 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-05 09:05:26,390 [INFO] Odczytano szyfrogram o długości 27 znaków.
+2026-11-05 09:05:26,390 [INFO] Automatycznie wybrano wymiar macierzy: 3x3.
+2026-11-05 09:05:26,976 [INFO] Odszyfrowany tekst (bez paddingu): tajnawiadomoscdoprzeslania
+2026-11-05 09:05:26,976 [INFO] Rozpoznane słowa: ['TAJNA', 'DO', 'ZE', 'DOM', 'WIADOMOSC', 'NA']
+2026-11-05 09:05:26,976 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_3.txt
+2026-11-05 09:05:26,977 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_3.txt
+2026-11-05 09:05:26,977 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_3.txt
+2026-11-05 09:05:26,977 [INFO] Zakończono sukcesem.
+2026-11-08 09:48:41,281 [INFO] Rozpoczęto kryptoanalizę szyfru Hilla.
+2026-11-08 09:49:02,541 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 09:49:02,541 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 09:49:12,226 [INFO] Odszyfrowany tekst (bez paddingu): calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimewhilematrixmultiplicationalonedoesnotresultinasecurecipheritisstillausefulstepwhencombinedwithothernonlinearoperationsbecausematrixmultiplicationcanprovidediffusionforexampleanappropriatelychosenmatrixcanguaranteethatsmalldifferencesbeforethematrixmultiplicationwillresultinlargedifferencesafterthematrixmultiplicationindeedsomemodernciphersuseamatrixmultiplicationsteptoprovidediffusionforexamplethemixcolumnsstepinaesisamatrixmultiplicationthefunctiongintwofishisacombinationofnonlinearsboxeswithacarefullychosenmatrixmultiplicationmds
+2026-11-08 09:49:12,226 [INFO] Rozpoznane słowa: ['AND', 'OTHER', 'CI', 'ME', 'MU', 'TIME', 'THIS', 'ONE', 'ON', 'AFTER', 'WILL', 'TAKE', 'THEM', 'MATRIX', 'SOME', 'HER', 'LINEAR', 'TO', 'HIS', 'USE', 'FOR', 'SA', 'BECAUSE', 'BO', 'CO', 'MA', 'THE', 'DO', 'WITH', 'ALGORITHM', 'GO', 'TWO', 'THEN', 'NA', 'CIPHER', 'ALL', 'WHEN', 'THAT', 'BY', 'CAN', 'TAK', 'OD', 'IM', 'NAS', 'NOT']
+2026-11-08 09:49:12,226 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 09:49:12,226 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 09:49:12,227 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 09:49:12,227 [INFO] Zakończono sukcesem.
+2026-11-08 10:04:49,632 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:05:16,645 [ERROR] Plik nie istnieje: C:\Users\turul\Pulpit\Szkoła-Studia-Korki\Studia - notatki\kryptologia\Hill\hill_szyfrogram.txt
+2026-11-08 10:05:30,256 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:06:06,041 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 10:06:06,041 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 10:06:15,788 [INFO] Odszyfrowany tekst (bez paddingu): calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimewhilematrixmultiplicationalonedoesnotresultinasecurecipheritisstillausefulstepwhencombinedwithothernonlinearoperationsbecausematrixmultiplicationcanprovidediffusionforexampleanappropriatelychosenmatrixcanguaranteethatsmalldifferencesbeforethematrixmultiplicationwillresultinlargedifferencesafterthematrixmultiplicationindeedsomemodernciphersuseamatrixmultiplicationsteptoprovidediffusionforexamplethemixcolumnsstepinaesisamatrixmultiplicationthefunctiongintwofishisacombinationofnonlinearsboxeswithacarefullychosenmatrixmultiplicationmds
+2026-11-08 10:06:15,788 [INFO] Rozpoznane słowa: ['THIS', 'HIS', 'ON', 'HER', 'SA', 'DO', 'MATRIX', 'AND', 'TIME', 'SOME', 'NAS', 'THEN', 'MA', 'GO', 'MU', 'TAKE', 'USE', 'THE', 'ONE', 'CAN', 'OD', 'TAK', 'TO', 'OTHER', 'NOT', 'BO', 'THEM', 'FOR', 'ALL', 'BECAUSE', 'CO', 'ALGORITHM', 'IM', 'THAT', 'WILL', 'WHEN', 'TWO', 'CI', 'LINEAR', 'NA', 'ME', 'WITH', 'BY', 'AFTER', 'CIPHER']
+2026-11-08 10:06:15,788 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 10:06:15,788 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 10:06:15,789 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 10:06:15,789 [INFO] Zakończono sukcesem.
+2026-11-08 10:11:53,366 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:12:17,344 [INFO] Odczytano szyfrogram o długości 30000 znaków.
+2026-11-08 10:12:17,344 [INFO] Długość podzielna przez 2 i 3. Sprawdzanie obu wariantów...
+2026-11-08 10:27:46,248 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:28:09,921 [INFO] Odczytano szyfrogram o długości 30000 znaków.
+2026-11-08 10:28:09,922 [INFO] Długość podzielna przez 2 i 3. Sprawdzanie obu wariantów...
+2026-11-08 10:32:04,519 [INFO] Wybrano alfabet: ALFA26 (A-Z, modulo 26).
+2026-11-08 10:32:07,943 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:32:31,134 [INFO] Odczytano szyfrogram o długości 30000 znaków.
+2026-11-08 10:32:31,134 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 10:32:31,134 [INFO] Długość podzielna przez 2 i 3. Sprawdzanie obu wariantów...
+2026-11-08 10:32:31,706 [INFO] Odszyfrowano pomyślnie cały plik (30000 znaków).
+2026-11-08 10:32:31,706 [INFO] Początek wiadomości: ethmgehrkediagnosticandconfirmationstrategiesintraithypothesistestingjournalofpe...
+2026-11-08 10:32:31,707 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 10:32:31,707 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 10:32:31,707 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 10:32:31,707 [INFO] Zakończono sukcesem.
+2026-11-08 10:37:18,338 [INFO] Wybrano alfabet: ALFA26 (A-Z, modulo 26).
+2026-11-08 10:37:20,414 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:37:44,822 [INFO] Odczytano szyfrogram o długości 30000 znaków.
+2026-11-08 10:37:44,822 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 10:37:44,823 [INFO] Długość podzielna przez 2 i 3. Sprawdzanie obu wariantów...
+2026-11-08 10:37:45,409 [INFO] Odszyfrowano pomyślnie cały plik (30000 znaków).
+2026-11-08 10:37:45,409 [INFO] Początek wiadomości: ngsomeforpolyalphabeticcipherscipherclassificationarabicphoneticsandsyntaxandmos...
+2026-11-08 10:37:45,410 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 10:37:45,410 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 10:37:45,410 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 10:37:45,410 [INFO] Zakończono sukcesem.
+2026-11-08 10:41:23,935 [INFO] Wybrano alfabet: ALFA26 (A-Z, modulo 26).
+2026-11-08 10:41:27,308 [INFO] Wybrano tryb: KPA (ze znanym tekstem).
+2026-11-08 10:41:49,682 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 10:41:55,545 [INFO] Wprowadzono znany fragment (6 znaków): 'MATRIX'
+2026-11-08 10:41:55,545 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 10:41:55,545 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 10:41:55,710 [INFO] Odszyfrowano pomyślnie cały plik (616 znaków).
+2026-11-08 10:41:55,710 [INFO] Początek wiadomości: calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimew...
+2026-11-08 10:41:55,711 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2_kpa.txt
+2026-11-08 10:41:55,711 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2_kpa.txt
+2026-11-08 10:41:55,711 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2_kpa.txt
+2026-11-08 10:41:55,711 [INFO] Zakończono sukcesem.
+2026-11-08 10:53:40,732 [INFO] Wybrano alfabet: ALFA37 (A-Z, spacja, 0-9, modulo 37).
+2026-11-08 10:53:43,457 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:54:02,058 [INFO] Odczytano szyfrogram o długości 113 znaków.
+2026-11-08 10:54:02,059 [ERROR] Długość tekstu nie pozwala na podział na bloki 2 ani 3.
+2026-11-08 10:54:39,349 [INFO] Wybrano alfabet: ALFA37 (A-Z, spacja, 0-9, modulo 37).
+2026-11-08 10:54:40,846 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 10:54:53,166 [INFO] Odczytano szyfrogram o długości 45 znaków.
+2026-11-08 10:54:53,166 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 10:54:53,166 [INFO] Automatycznie wybrano wymiar macierzy: 3x3.
+2026-11-08 10:55:05,471 [INFO] Odszyfrowano pomyślnie cały plik (45 znaków).
+2026-11-08 10:55:05,471 [INFO] Początek wiadomości: KEKTDOAE08NEN6E6G0IWENNHATAKEONEFJPOECDTYU MI...
+2026-11-08 10:55:05,471 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_3.txt
+2026-11-08 10:55:05,472 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_3.txt
+2026-11-08 10:55:05,472 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_3.txt
+2026-11-08 10:55:05,472 [INFO] Zakończono sukcesem.
+2026-11-08 11:01:08,458 [INFO] Wybrano alfabet: ALFA37 (A-Z, spacja, 0-9, modulo 37).
+2026-11-08 11:01:10,231 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 11:01:24,958 [ERROR] Plik nie istnieje: C:\Users\turul\Pulpit\Szkoła-Studia-Korki\Studia - notatki\kryptologia\Hill\ai
+2026-11-08 11:01:32,402 [INFO] Wybrano alfabet: ALFA37 (A-Z, spacja, 0-9, modulo 37).
+2026-11-08 11:01:33,826 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 11:01:48,511 [INFO] Odczytano szyfrogram o długości 45 znaków.
+2026-11-08 11:01:48,511 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 11:01:48,512 [INFO] Automatycznie wybrano wymiar macierzy: 3x3.
+2026-11-08 11:02:07,500 [INFO] Odszyfrowano pomyślnie cały plik (45 znaków).
+2026-11-08 11:02:07,500 [INFO] Odszyfrowana wiadomość: dom docathesellu tnhd2sitno  00a e1z4nd mo1y0
+2026-11-08 11:02:07,500 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_3.txt
+2026-11-08 11:02:07,501 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_3.txt
+2026-11-08 11:02:07,501 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_3.txt
+2026-11-08 11:02:07,502 [INFO] Zakończono sukcesem.
+2026-11-08 11:13:55,279 [INFO] Wybrano alfabet: ALFA37 (A-Z, spacja, 0-9, modulo 37).
+2026-11-08 11:14:05,436 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 11:14:31,933 [INFO] Odczytano szyfrogram o długości 45 znaków.
+2026-11-08 11:14:31,934 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 11:14:31,934 [INFO] Automatycznie wybrano wymiar macierzy: 3x3.
+2026-11-08 11:14:56,504 [INFO] Odszyfrowano pomyślnie cały plik (45 znaków).
+2026-11-08 11:14:56,505 [INFO] Odszyfrowana wiadomość: dpo9nw tdpog1a oczy uem 0 rfyi8ctout tr 0y e2
+2026-11-08 11:14:56,505 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_3.txt
+2026-11-08 11:14:56,505 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_3.txt
+2026-11-08 11:14:56,505 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_3.txt
+2026-11-08 11:14:56,505 [INFO] Zakończono sukcesem.
+2026-11-08 11:35:44,223 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 11:36:12,012 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 11:36:12,012 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 11:36:12,013 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 11:36:12,324 [INFO] Odszyfrowano pomyślnie cały plik (616 znaków).
+2026-11-08 11:36:12,324 [INFO] Początek wiadomości: calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimew...
+2026-11-08 11:36:12,325 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 11:36:12,325 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 11:36:12,325 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 11:36:12,325 [INFO] Zapisano pełne statystyki do: rozwiązania\statystyki_2.txt
+2026-11-08 11:36:12,325 [INFO] Zakończono sukcesem.
+2026-11-08 11:43:26,751 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 11:44:05,471 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 11:44:05,471 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 11:44:05,471 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 11:44:05,732 [INFO] Odszyfrowano pomyślnie cały plik (616 znaków).
+2026-11-08 11:44:05,733 [INFO] Początek wiadomości: calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimew...
+2026-11-08 11:44:05,733 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 11:44:05,733 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 11:44:05,733 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 11:44:05,733 [INFO] Zapisano statystyki porównawcze do: rozwiązania\statystyki_2.txt
+2026-11-08 11:44:05,734 [INFO] Zakończono sukcesem.
+2026-11-08 11:51:45,286 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 11:52:10,276 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 11:52:10,276 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 11:52:10,276 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 11:52:10,537 [INFO] Odszyfrowano pomyślnie cały plik (616 znaków).
+2026-11-08 11:52:10,537 [INFO] Początek wiadomości: calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimew...
+2026-11-08 11:52:10,538 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 11:52:10,538 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 11:52:10,538 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 11:52:10,538 [INFO] Zapisano statystyki porównawcze do: rozwiązania\statystyki_2.txt
+2026-11-08 11:52:10,539 [INFO] Zakończono sukcesem.
+2026-11-08 12:03:40,105 [INFO] Wybrano tryb: COA (sam szyfrogram).
+2026-11-08 12:03:56,481 [INFO] Odczytano szyfrogram o długości 616 znaków.
+2026-11-08 12:03:56,482 [INFO] Rozpoczęto analizę kryptoanalityczną...
+2026-11-08 12:03:56,482 [INFO] Automatycznie wybrano wymiar macierzy: 2x2.
+2026-11-08 12:03:56,744 [INFO] Wykryty język wiadomości: Język angielski (EN).
+2026-11-08 12:03:56,752 [INFO] Odszyfrowano pomyślnie cały plik (616 znaków).
+2026-11-08 12:03:56,752 [INFO] Początek wiadomości: calculatingthissolutionbystandardlinearalgebraalgorithmsthentakesverylittletimew...
+2026-11-08 12:03:56,752 [INFO] Zapisano odszyfrowaną wiadomość do: rozwiązania\odszyfrowane_2.txt
+2026-11-08 12:03:56,753 [INFO] Zapisano klucz macierzowy do: rozwiązania\klucz_macierz_2.txt
+2026-11-08 12:03:56,753 [INFO] Zapisano klucz literowy do: rozwiązania\klucz_alfa_2.txt
+2026-11-08 12:03:56,753 [INFO] Zapisano statystyki porównawcze do: rozwiązania\statystyki_2.txt
+2026-11-08 12:03:56,753 [INFO] Zakończono sukcesem.

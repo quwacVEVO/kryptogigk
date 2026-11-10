@@ -1,0 +1,17 @@
+Zestaw testowy alfa37
+
+Plik 1: test_alfa37_znana_pozycja.txt
+Tryb: 2 (znany fragment i znana pozycja)
+Fragment: ' a simple question how can a message remain readable on'
+Pozycja (indeks od 0): 37
+Klucz kontrolny: math2026
+Język: angielski
+
+Plik 2: test_alfa37_nieznana_pozycja.txt
+Tryb: 3 (znany fragment i nieznana pozycja)
+Fragment: ' cierpliwosci oraz sprawdzania hipotez analiza szyfrowania w'
+Pozycja: nie podawać programowi
+Klucz kontrolny: 'alfa 37key'
+Język: polski
+
+Ważne: fragmenty i klucze są ujawnione wyłącznie do weryfikacji testu. Podczas uruchomienia programu należy wpisać wskazany fragment, ale nie klucz.

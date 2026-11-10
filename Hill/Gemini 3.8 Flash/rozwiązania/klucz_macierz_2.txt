@@ -1,0 +1,42 @@
+Klucz szyfrujący 2x2 (konwencja kolumnowa C = K * P mod 26):
+  25 21
+  25 16
+
+Klucz szyfrujący 2x2 (konwencja wierszowa C = P * K mod 26):
+  25 25
+  21 16
+
+==================================================================
+  DZIAŁANIE KLUCZA: TABELA PRZEKSZTAŁCEŃ DIGRAMÓW
+==================================================================
+Szyfr Hilla przekształca całe bloki znaków (szyfr poligramowy).
+Poniższa tabela przedstawia, jak klucz szyfrujący K zamienia
+najczęstsze digramy wykrytego języka (EN) na szyfrogram:
+------------------------------------------------------------------
+ Tekst jawny (P)   --->   Szyfrogram (C)   |     Deszyfrowanie     
+------------------------------------------------------------------
+       TH           --->        YP         |    YP ---> TH
+       HE           --->        ZF         |    ZF ---> HE
+       IN           --->        FS         |    FS ---> IN
+       ER           --->        PI         |    PI ---> ER
+       AN           --->        NA         |    NA ---> AN
+       RE           --->        PV         |    PV ---> RE
+       ED           --->        HS         |    HS ---> ED
+       ON           --->        ZM         |    ZM ---> ON
+       ES           --->        KY         |    KY ---> ES
+       ST           --->        RA         |    RA ---> ST
+       EN           --->        JW         |    JW ---> EN
+       AT           --->        JS         |    JS ---> AT
+       TO           --->        PX         |    PX ---> TO
+       NT           --->        WF         |    WF ---> NT
+       HA           --->        TT         |    TT ---> HA
+       ND           --->        YJ         |    YJ ---> ND
+       OU           --->        QU         |    QU ---> OU
+       EA           --->        WW         |    WW ---> EA
+       NG           --->        JF         |    JF ---> NG
+       AS           --->        OC         |    OC ---> AS
+       OR           --->        FY         |    FY ---> OR
+       TI           --->        TF         |    TF ---> TI
+       IS           --->        GU         |    GU ---> IS
+       ET           --->        FO         |    FO ---> ET
+==================================================================

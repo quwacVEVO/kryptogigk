@@ -1,0 +1,7 @@
+Klucz szyfrujący 2x2 (konwencja kolumnowa C = K * P mod 26):
+  25 21
+  25 16
+
+Klucz szyfrujący 2x2 (konwencja wierszowa C = P * K mod 26):
+  25 25
+  21 16

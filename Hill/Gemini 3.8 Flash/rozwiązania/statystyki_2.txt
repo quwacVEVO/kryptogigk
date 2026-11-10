@@ -1,0 +1,86 @@
+==================================================================
+  STATYSTYKI SZYFROGRAMU W PORÓWNANIU Z WYKRYTYM JĘZYKIEM
+==================================================================
+Wykryty język tekstu jawnego: Język angielski (EN)
+Długość analizowanego szyfrogramu: 616 znaków
+Indeks Koincydencji (IC) szyfrogramu: 0.04281
+  * Wartość referencyjna dla języka naturalnego: ~0.06500
+  * Wartość referencyjna dla tekstu losowego:    ~0.03846
+  * Wniosek: Szyfr Hilla rozprasza statystyki (dyfuzja).
+
+------------------------------------------------------------------
+ Lp. | Szyfr: Lit. | Liczba | Szyfr %  | J. ang: Lit.  |   EN %   
+------------------------------------------------------------------
+  1. |      Y      |     43 |   6.98% |       E       |  12.02% 
+  2. |      F      |     40 |   6.49% |       T       |   9.10% 
+  3. |      J      |     35 |   5.68% |       A       |   8.12% 
+  4. |      W      |     35 |   5.68% |       O       |   7.68% 
+  5. |      T      |     34 |   5.52% |       I       |   7.31% 
+  6. |      I      |     33 |   5.36% |       N       |   6.95% 
+  7. |      H      |     30 |   4.87% |       S       |   6.28% 
+  8. |      S      |     29 |   4.71% |       R       |   6.02% 
+  9. |      V      |     29 |   4.71% |       H       |   5.92% 
+ 10. |      Z      |     29 |   4.71% |       D       |   4.32% 
+ 11. |      D      |     27 |   4.38% |       L       |   3.98% 
+ 12. |      O      |     24 |   3.90% |       U       |   2.88% 
+ 13. |      P      |     24 |   3.90% |       C       |   2.71% 
+ 14. |      A      |     22 |   3.57% |       M       |   2.61% 
+ 15. |      M      |     20 |   3.25% |       F       |   2.30% 
+ 16. |      K      |     19 |   3.08% |       Y       |   2.11% 
+ 17. |      N      |     18 |   2.92% |       W       |   2.09% 
+ 18. |      X      |     18 |   2.92% |       G       |   2.03% 
+ 19. |      G      |     16 |   2.60% |       P       |   1.82% 
+ 20. |      U      |     16 |   2.60% |       B       |   1.49% 
+ 21. |      B      |     15 |   2.44% |       V       |   1.11% 
+ 22. |      L      |     15 |   2.44% |       K       |   0.69% 
+ 23. |      R      |     14 |   2.27% |       X       |   0.17% 
+ 24. |      C      |     12 |   1.95% |       Q       |   0.11% 
+ 25. |      E      |     12 |   1.95% |       J       |   0.10% 
+ 26. |      Q      |      7 |   1.14% |       Z       |   0.07% 
+------------------------------------------------------------------
+
+==================================================================
+  STATYSTYKA N-GRAMÓW W SZYFROGRAMIE
+==================================================================
+15 najczęstszych digramów (2-gramów) w szyfrogramie:
+  TF: 14, JS: 11, AT: 9, FZ: 9, YP: 8, ZM: 8, FI: 8, YY: 7, YJ: 7, SW: 7, HV: 7, DA: 6, AI: 6, VH: 6, HW: 6
+  (Typowe digramy j. angielskiego: TH, HE, IN, ER, AN, RE, ON, AT, EN)
+
+15 najczęstszych trigramów (3-gramów) w szyfrogramie:
+  TFZ: 7, FZM: 6, JSA: 5, DAT: 5, ATF: 5, OOA: 4, OAT: 4, ATH: 4, THW: 4, JSV: 4, SVH: 4, VHV: 4, HVN: 4, VND: 4, NDA: 4
+  (Typowe trigramy j. angielskiego: THE, AND, ING, ENT, ION, HER, FOR)
+==================================================================
+==================================================================
+  DZIAŁANIE KLUCZA: TABELA PRZEKSZTAŁCEŃ DIGRAMÓW
+==================================================================
+Szyfr Hilla przekształca całe bloki znaków (szyfr poligramowy).
+Poniższa tabela przedstawia, jak klucz szyfrujący K zamienia
+najczęstsze digramy wykrytego języka (EN) na szyfrogram:
+------------------------------------------------------------------
+ Tekst jawny (P)   --->   Szyfrogram (C)   |     Deszyfrowanie     
+------------------------------------------------------------------
+       TH           --->        YP         |    YP ---> TH
+       HE           --->        ZF         |    ZF ---> HE
+       IN           --->        FS         |    FS ---> IN
+       ER           --->        PI         |    PI ---> ER
+       AN           --->        NA         |    NA ---> AN
+       RE           --->        PV         |    PV ---> RE
+       ED           --->        HS         |    HS ---> ED
+       ON           --->        ZM         |    ZM ---> ON
+       ES           --->        KY         |    KY ---> ES
+       ST           --->        RA         |    RA ---> ST
+       EN           --->        JW         |    JW ---> EN
+       AT           --->        JS         |    JS ---> AT
+       TO           --->        PX         |    PX ---> TO
+       NT           --->        WF         |    WF ---> NT
+       HA           --->        TT         |    TT ---> HA
+       ND           --->        YJ         |    YJ ---> ND
+       OU           --->        QU         |    QU ---> OU
+       EA           --->        WW         |    WW ---> EA
+       NG           --->        JF         |    JF ---> NG
+       AS           --->        OC         |    OC ---> AS
+       OR           --->        FY         |    FY ---> OR
+       TI           --->        TF         |    TF ---> TI
+       IS           --->        GU         |    GU ---> IS
+       ET           --->        FO         |    FO ---> ET
+==================================================================

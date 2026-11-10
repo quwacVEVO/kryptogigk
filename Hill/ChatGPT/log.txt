@@ -1,0 +1,12 @@
+2026-11-08 13:20:45,351 | INFO | Plik szyfrogramu: C:\Users\turul\Pulpit\Szkoła-Studia-Korki\Studia - notatki\kryptologia\Hill\hill_szyfrogram.txt
+2026-11-08 13:20:45,352 | INFO | Alfabet: alfa26, moduł: 26, liczba symboli: 616
+2026-11-08 13:20:45,352 | INFO | Znany fragment tekstu jawnego podano bezpośrednio.
+2026-11-08 13:20:45,354 | INFO | Szukanie znanego fragmentu dla macierzy 2x2 (mod 26).
+2026-11-08 13:20:45,365 | INFO | Pominięto rozmiar 3: długość szyfrogramu nie jest podzielna przez 3.
+2026-11-08 13:20:45,365 | INFO | Szukanie znanego fragmentu dla macierzy 4x4 (mod 26).
+2026-11-08 13:20:45,366 | INFO | Fragment nie zawiera 4 pełnych bloków potrzebnych do bezpośredniego wyznaczenia klucza 4x4.
+2026-11-08 13:20:45,366 | INFO | Pominięto rozmiar 5: długość szyfrogramu nie jest podzielna przez 5.
+2026-11-08 13:20:45,366 | INFO | Kandydat 2x2: język angielski, ocena -4.327522, pozycje fragmentu 85, 205, 275, 322, 378, 425, 502, 594, metoda direct-crib.
+2026-11-08 13:20:45,369 | INFO | Odzyskano klucz na podstawie znanego fragmentu: macierz 2x2; język odniesienia: angielski; liczba różnych kandydatów: 1.
+2026-11-08 13:20:45,375 | INFO | Zapisano: odszyfrowana_wiadomosc.txt, klucz.txt oraz statystyki.txt.
+2026-11-08 13:20:45,375 | INFO | Log zapisano w: log.txt

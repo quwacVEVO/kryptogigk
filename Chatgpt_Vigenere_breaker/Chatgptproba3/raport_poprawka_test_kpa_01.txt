@@ -1,0 +1,33 @@
+Raport poprawki - test_kpa_01.txt
+
+Dane wejsciowe:
+- alfabet: alfa26
+- dlugosc szyfrogramu: 85 symboli
+- znany fragment: kryptografia
+- tryb: 3 (pozycja nieznana)
+- maksymalna badana dlugosc klucza: 30
+
+Wynik poprawionej wersji:
+- pozycja fragmentu: 11 (indeksowanie od zera)
+- klucz: ENIGMA
+- dlugosc klucza: 6
+- zgodne powtorzenia pozycji klucza: 6
+- lokalny kontekst jezykowy: polski
+
+Przyczyna poprzedniego bledu:
+Stara wersja szeregowala kandydatow przede wszystkim wedlug jednosymbolowej oceny czestosci calego odszyfrowanego tekstu. Dla 85 znakow ta miara byla niestabilna. W dodatku kandydat o okresie rownym dlugosci fragmentu nie podlegal zadnym powtorzonym ograniczeniom, a mimo to mogl uzyskac wysoka ocene jezykowa.
+
+Poprawka:
+Kandydaci sa teraz szeregowani najpierw wedlug liczby zgodnych powtorzen pozycji klucza. Ocena jezykowa jest kryterium pomocniczym i opiera sie na lokalnym fragmencie wokol znanego tekstu. Powtorzone kandydatury tego samego klucza i pozycji sa laczone.
+
+Kontrola trybu 2:
+Po podaniu znanej pozycji 11 odzyskano ten sam klucz ENIGMA.
+
+Kontrola alfa37:
+- znana pozycja 37, fragment z pliku testowego: odzyskany klucz math2026, pozycja 37
+- pozycja nieznana, fragment z pliku testowego: odzyskany klucz 'alfa 37key', pozycja 26
+
+Wazne ograniczenie:
+Odszyfrowanie calych 85 znakow kluczem ENIGMA daje czytelny poczatek "wspolczesnakryptografia", ale dalszy ciag jest nieczytelny. Klucz i polozenie sa silnie potwierdzone przez zgodnosc znanego fragmentu. Nie ma jednak podstaw, aby twierdzic, ze caly szyfrogram stanowi poprawnie zaszyfrowany tekst naturalny; plik moze byc uszkodzony, zawierac losowe znaki lub pochodzic z innej konwencji szyfrowania.
+
+Atak statystyczny bez tekstu jawnego nie odzyskal poprawnego klucza w tym krotkim przypadku. Nie nalezy traktowac tego wyniku jako weryfikacji ataku z fragmentem.

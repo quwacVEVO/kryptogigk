@@ -1,0 +1,64 @@
+AI GRUPA DRUGA
+model: gemini flash 3.8 (google ai studio), thinking level: hard
+prompt 1: "hej, mamy zadanie z kryptologii, podam polecenia które mamy wykonać na razie.
+
+Dokładnie zaimplementuj szyfry Vigenère’a i Hilla.
+
+- Program szyfrujący i deszyfrujący szyfrem Vigenère’a.
+- Program szyfrujący i deszyfrujący szyfrem Hilla.
+
+W obu przypadkach program powinien umożliwiać:
+- otwieranie tekstu i klucza z plików,
+- zapis wyników do pliku,
+- wybór trybu szyfrowania lub deszyfrowania,
+- szyfrowanie alfabetu 26-znakowego.
+
+DODATKOWO:
+- kontrola błędów (niepoprawny klucz, brak pliku, błędny format danych),
+- dla szyfru Hilla wykrywanie nieodwracalnej macierzy klucza,
+- możliwość pracy na rozszerzonym alfabecie (cyfry, znaki specjalne, spacje),
+- przygotowanie testów poprawności działania obu implementacji (i takie co działają, i takie, co mogą nie zadziałać).
+
+Dla konwencji, uznaj, że tekst zaszyfrowany wygląda np tak:
+ABCD123_!()
+a przy odszyfrowywaniu tak:
+abcd[1][2][3][_][!][(][)]
+ale wtedy nawias kwadratowy nie może znaleźć się w tekście
+
+Zanim zaczniesz działać, zadaj pytania dodatkowe, żebyśmy się upewnili, że wszystko rozumiesz."
+odpowiedź: zapytał o jakies niescislosci, pytania konwencyjne
+prompt 2:
+1.
+- to będzie w pythonie
+- to będzie interaktywne menu tekstowe w konsoli
+- może wszystko być w jednym pliku, byle dało się wybierać czy wejść w tryb ogólny (szyfrowanie/deszyfrowanie przez użytkownika) czy testowy (odpala tylko testy)
+
+2.
+- tryb 26-znakowy ma tylko litery alfabetu angielskiego, jeśli jest wybrany ten tryb a tekst zawiera liczby, spacje, czy znaki specjalne, to rzuć błąd
+- te nawiasy kwadratowe tyczą się tylko trybu rozszerzonego, i mają pojawić się tylko przy znakach specjalnych odszyfrowanych
+
+3.
+- niech klucz to ciąg znaków do przekonwertowania na macierz
+- wymiar macierzy może być nxn
+- zastanów się co zrobić jeśli tekst jawny nie pasuje do macierzy nxn
+
+4.
+- klucz w trybie rozszerzonym może mieć wszystkie znaki specjalne prócz nawiasów kwadratowych
+
+5.
+- mają być duże litery, znaki specjalne bez nawiasów kwadratowych, i spacja
+
+6.
+- proste sprawdzenie czy przypadki które powinny działać działają, i przypadki takie które rzucają błędy, żeby też każdy przypadek błędny był przetestowany
+- niech te testy nie będą duże, można testować na małych przykładowych stringach, byle żeby to wykorzystało wybrany alfabet w pełni, i kilka różnych kluczy
+- wyświetl wyniki testów na konsoli (co poszło ok a co nie ok)
+
+dodatkowe info:
+- spację po prostu też damy w nawiasach kwadratowych
+- upewnij się że program jest foolproof, żeby użytkownik przypadkiem nie zrobił czegoś co nieoczekiwanie wywali gdzieś program
+
+jeśli jesteś pewien tego co robić (z tą nową informacją), to działaj, a jeśli masz nowe pytania, to zapytaj dalej
+
+wgl pozdro od naszej grupy projektowej
+odpowiedź: wymagania jasne, pozdrowienia odwzajemnione, pliki wyplute
+

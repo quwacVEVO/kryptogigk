@@ -1,0 +1,17 @@
+Alfabet: alfa26 (mod 26)
+Rozmiar macierzy: 2x2
+Metoda: known-plaintext-fragment
+Ocena statystyczna: -4.327522
+
+Pozycja początku znanego fragmentu w odszyfrowanej wiadomości (liczenie od 1): 85, 205, 275, 322, 378, 425, 502, 594
+Liczba pełnych bloków fragmentu wykorzystanych do odzyskania klucza: 3
+Sposób odzyskania: direct-crib
+Położenie fragmentu zostało wyszukane automatycznie.
+
+Klucz szyfrujący K:
+[25  21]
+[25  16]
+
+Macierz deszyfrująca K^(-1):
+[24   1]
+[21   5]

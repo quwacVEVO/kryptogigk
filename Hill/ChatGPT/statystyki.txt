@@ -1,0 +1,183 @@
+STATYSTYKI CZĘSTOTLIWOŚCI - SZYFR HILLA
+Alfabet: alfa26 (moduł 26)
+Język odniesienia: angielski
+Częstości językowe dotyczą liter A-Z. W alfa37 spacje i cyfry są uwzględniane w unigramach i n-gramach, ale nie w porównaniu częstości liter.
+N-gramy liczone są z nakładaniem. W bigramach i trigramach pokazano wyłącznie 5 najczęstszych wzorców. [SP] oznacza spację.
+Tabela liter pokazuje dwa niezależne rankingi: badany tekst i język referencyjny, każdy od najczęstszej litery.
+Porównanie szyfrogramu z językiem jest poglądowe: szyfrowanie zmienia rozkład liter.
+
+========================================================================
+SZYFROGRAM
+========================================================================
+Liczba symboli: 616
+Liczba liter A-Z: 616
+Liczba spacji i cyfr: 0
+LITERY - PORÓWNANIE POSORTOWANYCH ROZKŁADÓW
+Język odniesienia: angielski
+Pozycja | Tekst: litera | Tekst: procent | Język: litera | Język: procent
+Rankingi tekstu i języka są sortowane niezależnie, od największej częstości.
+  1 | y | 6.981% | e | 12.702%
+  2 | f | 6.494% | t | 9.056%
+  3 | j | 5.682% | a | 8.167%
+  4 | w | 5.682% | o | 7.507%
+  5 | t | 5.519% | i | 6.966%
+  6 | i | 5.357% | n | 6.749%
+  7 | h | 4.870% | s | 6.327%
+  8 | s | 4.708% | h | 6.094%
+  9 | v | 4.708% | r | 5.987%
+ 10 | z | 4.708% | d | 4.253%
+ 11 | d | 4.383% | l | 4.025%
+ 12 | o | 3.896% | c | 2.782%
+ 13 | p | 3.896% | u | 2.758%
+ 14 | a | 3.571% | m | 2.406%
+ 15 | m | 3.247% | w | 2.360%
+ 16 | k | 3.084% | f | 2.228%
+ 17 | n | 2.922% | g | 2.015%
+ 18 | x | 2.922% | y | 1.974%
+ 19 | g | 2.597% | p | 1.929%
+ 20 | u | 2.597% | b | 1.492%
+ 21 | b | 2.435% | v | 0.978%
+ 22 | l | 2.435% | k | 0.772%
+ 23 | r | 2.273% | j | 0.153%
+ 24 | c | 1.948% | x | 0.150%
+ 25 | e | 1.948% | q | 0.095%
+ 26 | q | 1.136% | z | 0.074%
+Łączna liczba liter użyta do obliczenia procentów tekstu: 616
+Liczby wystąpień poszczególnych liter są również dostępne w sekcji unigramów.
+
+UNIGRAMY - WSZYSTKIE WYSTĘPUJĄCE SYMBOLE
+Wzorzec | Liczba wystąpień | Udział
+y | 43 | 6.9805%
+f | 40 | 6.4935%
+j | 35 | 5.6818%
+w | 35 | 5.6818%
+t | 34 | 5.5195%
+i | 33 | 5.3571%
+h | 30 | 4.8701%
+s | 29 | 4.7078%
+v | 29 | 4.7078%
+z | 29 | 4.7078%
+d | 27 | 4.3831%
+o | 24 | 3.8961%
+p | 24 | 3.8961%
+a | 22 | 3.5714%
+m | 20 | 3.2468%
+k | 19 | 3.0844%
+n | 18 | 2.9221%
+x | 18 | 2.9221%
+g | 16 | 2.5974%
+u | 16 | 2.5974%
+b | 15 | 2.4351%
+l | 15 | 2.4351%
+r | 14 | 2.2727%
+c | 12 | 1.9481%
+e | 12 | 1.9481%
+q | 7 | 1.1364%
+
+BIGRAMY - 5 NAJCZĘSTSZYCH
+Wzorzec | Liczba wystąpień | Udział
+tf | 14 | 2.2764%
+js | 11 | 1.7886%
+at | 9 | 1.4634%
+fz | 9 | 1.4634%
+fi | 8 | 1.3008%
+Pokazano 5 najczęstszych n-gramów.
+
+TRIGRAMY - 5 NAJCZĘSTSZYCH
+Wzorzec | Liczba wystąpień | Udział
+tfz | 7 | 1.1401%
+fzm | 6 | 0.9772%
+atf | 5 | 0.8143%
+dat | 5 | 0.8143%
+jsa | 5 | 0.8143%
+Pokazano 5 najczęstszych n-gramów.
+
+========================================================================
+TEKST ODSZYFROWANY
+========================================================================
+Liczba symboli: 616
+Liczba liter A-Z: 616
+Liczba spacji i cyfr: 0
+LITERY - PORÓWNANIE POSORTOWANYCH ROZKŁADÓW
+Język odniesienia: angielski
+Pozycja | Tekst: litera | Tekst: procent | Język: litera | Język: procent
+Rankingi tekstu i języka są sortowane niezależnie, od największej częstości.
+  1 | i | 11.364% | e | 12.702%
+  2 | e | 9.903% | t | 9.056%
+  3 | t | 9.253% | a | 8.167%
+  4 | a | 8.279% | o | 7.507%
+  5 | n | 7.143% | i | 6.966%
+  6 | l | 6.818% | n | 6.749%
+  7 | o | 6.331% | s | 6.327%
+  8 | r | 5.844% | h | 6.094%
+  9 | s | 5.682% | r | 5.987%
+ 10 | m | 4.383% | d | 4.253%
+ 11 | c | 3.896% | l | 4.025%
+ 12 | u | 3.571% | c | 2.782%
+ 13 | p | 3.247% | u | 2.758%
+ 14 | h | 2.922% | m | 2.406%
+ 15 | f | 2.760% | w | 2.360%
+ 16 | d | 2.273% | f | 2.228%
+ 17 | x | 1.948% | g | 2.015%
+ 18 | b | 1.136% | y | 1.974%
+ 19 | g | 0.974% | p | 1.929%
+ 20 | w | 0.974% | b | 1.492%
+ 21 | y | 0.649% | v | 0.978%
+ 22 | v | 0.487% | k | 0.772%
+ 23 | k | 0.162% | j | 0.153%
+ 24 | j | 0.000% | x | 0.150%
+ 25 | q | 0.000% | q | 0.095%
+ 26 | z | 0.000% | z | 0.074%
+Łączna liczba liter użyta do obliczenia procentów tekstu: 616
+Liczby wystąpień poszczególnych liter są również dostępne w sekcji unigramów.
+
+UNIGRAMY - WSZYSTKIE WYSTĘPUJĄCE SYMBOLE
+Wzorzec | Liczba wystąpień | Udział
+i | 70 | 11.3636%
+e | 61 | 9.9026%
+t | 57 | 9.2532%
+a | 51 | 8.2792%
+n | 44 | 7.1429%
+l | 42 | 6.8182%
+o | 39 | 6.3312%
+r | 36 | 5.8442%
+s | 35 | 5.6818%
+m | 27 | 4.3831%
+c | 24 | 3.8961%
+u | 22 | 3.5714%
+p | 20 | 3.2468%
+h | 18 | 2.9221%
+f | 17 | 2.7597%
+d | 14 | 2.2727%
+x | 12 | 1.9481%
+b | 7 | 1.1364%
+g | 6 | 0.9740%
+w | 6 | 0.9740%
+y | 4 | 0.6494%
+v | 3 | 0.4870%
+k | 1 | 0.1623%
+
+BIGRAMY - 5 NAJCZĘSTSZYCH
+Wzorzec | Liczba wystąpień | Udział
+ti | 24 | 3.9024%
+at | 20 | 3.2520%
+on | 16 | 2.6016%
+io | 13 | 2.1138%
+ca | 12 | 1.9512%
+Pokazano 5 najczęstszych n-gramów.
+
+TRIGRAMY - 5 NAJCZĘSTSZYCH
+Wzorzec | Liczba wystąpień | Udział
+ion | 13 | 2.1173%
+tio | 11 | 1.7915%
+ati | 10 | 1.6287%
+lti | 9 | 1.4658%
+ult | 9 | 1.4658%
+Pokazano 5 najczęstszych n-gramów.
+
+ŹRÓDŁA CZĘSTOŚCI REFERENCYJNYCH
+Polski: próbka drugiego wydania Korpusu IPI PAN (ok. 25 mln słów); polskie znaki diakrytyczne są sumowane z literami bazowymi, zgodnie z normalizacją programu.
+https://ckziumragowo.pl/szkolne-artykuly/2020/Cz%C4%99sto%C5%9B%C4%87-wyst%C4%99powania-liter-w-j%C4%99zyku-polskim
+Angielski: tabela względnych częstości liter - Emory University.
+https://math.oxford.emory.edu/site/math125/englishLetterFreqs/
+Wartości referencyjne są przybliżonym punktem odniesienia; rzeczywiste częstości zależą od rodzaju i tematyki tekstu.

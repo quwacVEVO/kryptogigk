@@ -1,0 +1,3 @@
+Alfabet: mod 37 (alfa37)
+Klucz literowy (konwencja kolumnowa): 75UQNH9C7
+Klucz literowy (konwencja wierszowa):  7Q95NCUH7
