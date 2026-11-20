@@ -1,7 +1,8 @@
 # Wytyczne, harmonogram i terminy projektu
 
-Deadline (1): 26.11.2026 13:30 - tj. do najbliższych laboratoriów
-Deadline (2): 30.11.2026 18:00
+Deadline (1): **26.11.2026 13:30** - tj. do najbliższych laboratoriów
+
+Deadline (2): **30.11.2026 18:00**
 
 ---
 
