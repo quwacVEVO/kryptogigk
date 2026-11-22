@@ -1,0 +1,13 @@
+generator,configuration,parameters,state_preperiod,state_period,K,unique_values,duplicate_occurrences,colliding_pairs
+LFSR,n3_dobre,"n=3; taps=(0, 1); seed=001",0,7,200,7,193,2758
+LFSR,n4_dobre,"n=4; taps=(0, 1); seed=0001",0,15,200,15,185,1235
+LFSR,n4_inne_ziarno,"n=4; taps=(0, 1); seed=1000",0,15,200,15,185,1235
+LFSR,n4_slabe_odczepy,"n=4; taps=(0,); seed=0001",0,4,200,1,199,19900
+LFSR,n8_dobre,"n=8; taps=(0, 2, 3, 4); seed=00000001",0,255,200,200,0,0
+LFSR,n16_dobre,"n=16; taps=(0, 2, 3, 5); seed=0000000000000001",0,65535,200,132,68,94
+LFSR,n16_ziarno_zerowe,"n=16; taps=(0, 2, 3, 5); seed=0000000000000000",0,1,200,1,199,19900
+LCG,pelny_okres,m=256; a=5; c=1; x0=7; Hull-Dobell=True,0,256,200,200,0,0
+LCG,pelny_okres_inne_ziarno,m=256; a=5; c=1; x0=8; Hull-Dobell=True,0,256,200,200,0,0
+LCG,slaby_mnoznik,m=256; a=6; c=1; x0=7; Hull-Dobell=False,6,1,200,6,194,18915
+LCG,parzysty_przyrost,m=256; a=5; c=2; x0=7; Hull-Dobell=False,0,128,200,128,72,72
+LCG,mniejszy_modul,m=64; a=5; c=1; x0=7; Hull-Dobell=True,0,64,200,64,136,216

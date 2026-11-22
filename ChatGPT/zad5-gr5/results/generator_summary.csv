@@ -1,0 +1,3 @@
+generator,K,lower,upper,state_preperiod,state_period,count,unique_count,duplicate_occurrences,repeated_values,colliding_pairs
+LFSR,200,10000,59999,0,65535,200,200,0,0,0
+LCG,200,10000,59999,0,65536,200,200,0,0,0

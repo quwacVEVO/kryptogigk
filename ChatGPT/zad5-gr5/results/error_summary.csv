@@ -1,0 +1,7 @@
+source,method,measurements,false_primes,false_composites
+LCG,Fermat,200,0,0
+LCG,Miller-Rabin,200,0,0
+LCG,dzielenie_przez_pierwsze,200,0,0
+LFSR,Fermat,200,0,0
+LFSR,Miller-Rabin,200,0,0
+LFSR,dzielenie_przez_pierwsze,200,0,0

@@ -1,0 +1,5 @@
+iterations,measurements,min_ns,max_ns,mean_ns,median_ns,false_primes,false_composites
+1,400,170,58488,1495.91,235.5,0,0
+3,400,170,45910,1927.87,240.5,0,0
+5,400,161,71698,2284.42,231.0,0,0
+10,400,170,67532,3117.95,235.5,0,0
