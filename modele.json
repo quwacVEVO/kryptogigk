@@ -1,0 +1,26 @@
+{
+  "recorded_at_utc": "2026-11-12T14:02:04.162018+00:00",
+  "recorded_at_warsaw": "2026-11-12T15:02:04.162169+01:00",
+  "orchestrator_label_supplied_by_environment": "GPT-6 Astra Pro",
+  "orchestrator_exact_snapshot": null,
+  "orchestrator_reasoning_mode_exposed": null,
+  "independent_trials": [
+    {
+      "call_identifier": "gpt-6.1-sol",
+      "requested_reasoning_effort": "high",
+      "mode": "independent_agent",
+      "metadata": "proby_modeli/gpt_6_1_sol/metadata.json"
+    },
+    {
+      "call_identifier": "gpt-6-sol",
+      "requested_reasoning_effort": "high",
+      "mode": "independent_agent",
+      "metadata": "proby_modeli/gpt_6_sol/metadata.json"
+    }
+  ],
+  "notes": [
+    "Identyfikator narzędzia i zadany tryb są znane; snapshot/build i rzeczywisty wewnętrzny wariant są nieudostępnione.",
+    "Znaczniki prób opisują procesy programów, nie kompletny czas generowania odpowiedzi ani roboczogodziny osób.",
+    "Poprzedni archiwalny raport nie ma pełnych surowych artefaktów prób; nie zastępujemy ich nowymi pod starą datą."
+  ]
+}

@@ -1,0 +1,19 @@
+STATUS WCZEŚNIEJSZYCH DANYCH
+
+Plik pierwotna_paczka.zip jest niezmienioną kopią paczki z poprzedniej odpowiedzi.
+Zawiera podsumowania prób modeli i kod końcowy, ale nie zawiera kompletnych kodów
+obu niezależnych prób ani ich surowych stdout/stderr. Brakuje też pełnego logu
+opisanych 371 przypadków. Nie odtwarzamy tych braków jako rzekomo historycznych plików.
+
+W proby_modeli/ są NOWE, rzeczywiście wykonane, niezależne próby obu modeli.
+Zachowano ich kod przed wykonaniem, stdout, stderr, znaczniki czasu, komendy
+uruchomienia, kody wyjścia oraz sumy kontrolne. Starsze czasy nie są nowymi pomiarami.
+
+Zestaw testy_371 został wykonany PONOWNIE: wszystkie wykładniki dla p=2,3,17,97,257.
+To nowy log opisanego zakresu. Nie jest to odzyskany log wcześniejszego uruchomienia.
+
+Punkt 5 dotyczący dokładnego odzyskania surowych artefaktów STARYCH prób pozostaje
+nieweryfikowalny. Nowe próby dostarczają pełnych, odtwarzalnych artefaktów od teraz.
+Snapshot/build modelu i faktyczny wewnętrzny wariant nie są udostępniane.
+W metadanych podano identyfikator wywołania i jawnie ustawiony tryb high, a brakujące
+pola mają null. Nie podano wymyślonego numeru wersji ani czasu pracy użytkownika.

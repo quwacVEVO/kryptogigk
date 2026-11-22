@@ -1,0 +1,13 @@
+Metody: BSGS oraz Pohlig–Hellman; sekundy mierzone perf_counter_ns.
+Z1: p=37781, g=3, h=24581, rząd(g)=37780, czynniki={2: 2, 5: 1, 1889: 1}
+  BSGS: a=1234, weryfikacja=True, czas_ns=68341, czas_s=0.000068341
+  Pohlig–Hellman: a=1234, weryfikacja=True, czas_ns=104491, czas_s=0.000104491
+Z2: p=100000127, g=5, h=5910514, rząd(g)=100000126, czynniki={2: 1, 50000063: 1}
+  BSGS: a=70205663, weryfikacja=True, czas_ns=6406634, czas_s=0.006406634
+  Pohlig–Hellman: a=70205663, weryfikacja=True, czas_ns=1121686, czas_s=0.001121686
+Z3: p=1000000000547, g=2, h=514634099897, rząd(g)=1000000000546, czynniki={2: 1, 500000000273: 1}
+  BSGS: a=640639186538, weryfikacja=True, czas_ns=795074241, czas_s=0.795074241
+  Pohlig–Hellman: a=640639186538, weryfikacja=True, czas_ns=335792809, czas_s=0.335792809
+Z4: p=33815155531460793491, g=19, h=30073559734842340154, rząd(g)=33815155531460793490, czynniki={2: 1, 5: 1, 7: 1, 11: 1, 13: 1, 17: 1, 19: 1, 23: 1, 31: 1, 43: 3, 53: 1, 59: 2}
+  BSGS: pominięto; szacunkowo 5,815,080,011 wpisów tablicy i do 5,815,080,012 dużych kroków (bez oszacowania czasu).
+  Pohlig–Hellman: a=28938741015890190500, weryfikacja=True, czas_ns=494996, czas_s=0.000494996

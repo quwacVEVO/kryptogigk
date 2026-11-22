@@ -1,0 +1,55 @@
+{
+  "checked_at_utc": "2026-11-12T14:06:18.525742+00:00",
+  "folder": "g5_uzupelnienie/logi/bieg_po_poprawce",
+  "checks": {
+    "run_finished": true,
+    "source_matches_recorded_hashes": true,
+    "all_recorded_file_hashes_match": true,
+    "zadania_count": true,
+    "zadania_unique_runs": true,
+    "zadania_values": true,
+    "zadania_isolated_processes_ok": true,
+    "testy_371_count": true,
+    "testy_371_unique_runs": true,
+    "testy_371_values": true,
+    "testy_371_isolated_processes_ok": true,
+    "testy_losowe_count": true,
+    "testy_losowe_unique_runs": true,
+    "testy_losowe_values": true,
+    "testy_losowe_isolated_processes_ok": true,
+    "skalowanie_count": true,
+    "skalowanie_unique_runs": true,
+    "skalowanie_values": true,
+    "skalowanie_isolated_processes_ok": true,
+    "256_distinct_random_instances": true,
+    "371_distinct_small_instances": true,
+    "21_distinct_scaling_primes": true,
+    "scaling_bit_lengths": true,
+    "all_dataset_moduli_prime_independent": true,
+    "safe_primes_independent": true,
+    "raw_stdout_agrees": true
+  },
+  "counts": {
+    "zadania": {
+      "ok": 48
+    },
+    "zadania_ok_after_soft_deadline": 0,
+    "testy_371": {
+      "ok": 1855
+    },
+    "testy_371_ok_after_soft_deadline": 0,
+    "testy_losowe": {
+      "ok": 1280
+    },
+    "testy_losowe_ok_after_soft_deadline": 0,
+    "skalowanie": {
+      "ok": 94,
+      "timeout": 11
+    },
+    "skalowanie_ok_after_soft_deadline": 0,
+    "random_small_overlap": 0
+  },
+  "issues": [],
+  "independent_primality_library": "SymPy 1.14.0",
+  "all_checks_passed": true
+}

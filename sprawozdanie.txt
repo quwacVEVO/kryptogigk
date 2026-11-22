@@ -1,0 +1,161 @@
+KRYPTOLOGIA / LABORATORIUM 4 / G5 / WERSJA UZUPEŁNIONA
+
+Z1-Z4: wyniki i pomiary
+
+Data: 12.11.2026. Całość przygotowano z użyciem AI; kod został uruchomiony. Poniższe wyniki pochodzą z końcowego biegu po poprawce rho, nie z wcześniejszego raportu.
+
+1. Odzyskane wykładniki
+
+Zadanie | a | Sprawdzenie pow(g, a, p)
+
+Z1 | 1234 | 24581 = h
+
+Z2 | 70205663 | 5910514 = h
+
+Z3 | 640639186538 | 514634099897 = h
+
+Z4 | 28938741015890190500 | 30073559734842340154 = h
+
+Dane p, g i h są dokładnie tymi z polecenia. Każde a należy do [0, p-2]. Przy pełnym rzędzie generatora jest to jednoznaczny wynik w tym przedziale. Każdy solwer jest dodatkowo sprawdzany przez potęgowanie modularne.
+
+2. Porównanie metod - mediana z 3 uruchomień [s]
+
+Zad. | Siłowy | BSGS | Rho | PH + BSGS | PH + rho
+
+Z1 | 0,000182 | 0,000055 | 0,000174 | 0,000167 | 0,000278
+
+Z2 | 5,790514 | 0,004126 | 0,004413 | 0,004369 | 0,007616
+
+Z3 | nie badano | 0,722734 | 0,749437 | 0,597490 | 0,582990
+
+Z4 | nie badano | nie badano | nie badano | 0,001027 | 0,002002
+
+Z1 i Z2: pięć solwerów dało ten sam wynik. Z3: BSGS, rho i oba warianty PH dały ten sam wynik; ataku siłowego nie wymagano. Z4: wykonano dwa warianty PH z różnymi solwerami podgrup. Łącznie: 48 poprawnych uruchomień.
+
+3. Druga metoda dla Z4
+
+PH + rho odzyskuje cyfry wykładnika metodą rho Pollarda w podgrupach, a następnie łączy reszty przez CRT. Nie wywołuje BSGS. Dla h = 1 oraz rzędu 2 wynik jest sprawdzany bez spaceru. Oba warianty zwróciły a = 28938741015890190500.
+
+Wspólny jest schemat PH i CRT, różny jest solwer podgrup. Jest to druga metoda w znaczeniu dopuszczonym w punkcie 4 prośby użytkownika.
+
+4. Co obejmuje pomiar?
+
+Zegar: perf_counter_ns(); dodatkowo process_time_ns(). Każdy większy pomiar ma osobny proces. Czas algorytmu nie obejmuje startu procesu, zapisu logu ani końcowego sprawdzenia. Obejmuje wewnętrzne sprawdzenia solwera oraz, dla PH, faktoryzację i CRT.
+
+Dla Z3 największe RSS procesu wyniosło około 121,8 MiB dla BSGS i 13,0 MiB dla rho. To maksimum całego procesu z interpreterem, nie samych struktur algorytmu.
+
+G5 / TEST SKALOWANIA
+
+Bezpieczne liczby pierwsze
+
+Użyto 21 różnych liczb p = 2q + 1: po 3 dla długości 16, 20, 24, 28, 32, 36 i 40 bitów. Zarówno p, jak i q są pierwsze. Ziarno danych: 2026111202. W każdej instancji wszystkie solwery otrzymały te same p, g i h; wykładnik wybrano pseudolosowo.
+
+Linie pokazują mediany z 3 różnych instancji. Trójkąty przy 2 s oznaczają nieukończone próby siłowe. Nie są czasami rozwiązania. Kolejność metod była rotowana.
+
+Bity | Siłowy | BSGS | Rho | PH + BSGS | PH + rho
+
+16 | 0,00208 | 0,00007 | 0,00028 | 0,00014 | 0,00017
+
+20 | 0,00493 | 0,00032 | 0,00036 | 0,00030 | 0,00057
+
+24 | 0,57860 | 0,00113 | 0,00262 | 0,00087 | 0,00134
+
+28 | 1/3; limit 2 s | 0,00410 | 0,00446 | 0,00288 | 0,00782
+
+32 | 0/3; limit 2 s | 0,04071 | 0,09890 | 0,01760 | 0,01444
+
+36 | 0/3; limit 2 s | 0,16606 | 0,23762 | 0,07372 | 0,15082
+
+40 | 0/3; limit 2 s | 0,76284 | 0,65819 | 0,37884 | 0,40533
+
+Wynik: BSGS, rho, PH + BSGS i PH + rho ukończyły po 21/21 prób. Atak siłowy ukończył 10/21; 11 prób przekroczyło limit. Łącznie 94 ukończone pomiary i 11 przerwanych. Każdy otrzymany wynik był poprawny.
+
+Limity kooperacyjne: około 2 s dla ataku siłowego i 30 s dla pozostałych metod. Zegar sprawdzany jest okresowo, więc przerwanie może nastąpić nieco później. Proces nadrzędny ma dodatkowy limit +15 s. Nie było twardych przerwań procesu.
+
+Wniosek: dla p = 2q + 1 pozostaje duży czynnik pierwszy q. PH nadal musi rozwiązać logarytm w dużej podgrupie, więc nie daje tak silnego uproszczenia jak w Z4. Atak siłowy szybko przekracza praktyczny budżet czasu. Przy zaledwie 3 instancjach różnice między punktami zależą też od wykładników i przebiegu rho [1].
+
+G5 / TESTY I KOREKTA
+
+Poprawność i zmiany kodu
+
+5. Pełne testy po poprawce
+
+Zestaw | Instancje | Uruchomienia solwerów | Wynik
+
+Wcześniej opisany zakres | 371 | 1855 = 371 × 5 | wszystkie OK
+
+Pseudolosowe, 8-20 bitów | 256 | 1280 = 256 × 5 | wszystkie OK
+
+Regresja wykrytego błędu | 22 | 22 | wszystkie OK
+
+MR i faktoryzacja | 23 | 23 kontrole arytmetyki | wszystkie OK
+
+371 przypadków to wszystkie wykładniki dla p ∈ {2, 3, 17, 97, 257}: 1 + 2 + 16 + 96 + 256. Dają m.in. testy a = 0 oraz rzędów 2^4 i 2^8. To nowy log ponownego wykonania opisanego zakresu; historyczny log nie zachował się.
+
+256 instancji jest różnych; ziarno 2026111201. Są też rozłączne z zestawem 371 w tym biegu. Dla każdego wyniku sprawdzono a == oczekiwane_a oraz pow(g, a, p) == h. Solwery nie otrzymują oczekiwanego a. Dane, ziarna i wyniki każdej próby są w JSONL.
+
+6. Jeden wykryty i naprawiony błąd
+
+Pierwsza pełna seria wykryła błąd PH + rho dla p = 307, g = 131, h = 261, a = 17. W podgrupie rzędu 3 elementy {1, 17, 289} trafiały do tej samej części spaceru. Po 128 nieudanych restartach występował błąd wykonania; nie zwrócono błędnego a.
+
+Poprawka: przy każdym restarcie losujemy funkcję podziału ((u · x + v) mod p) mod 16. Nadal używamy rho, bez zastępowania go BSGS lub atakiem siłowym dla rzędu 3. Test regresji obejmuje 11 ziaren, każde dla małego podproblemu i pełnego PH. Potem ponownie wykonano całą serię.
+
+Zachowano kod sprzed poprawki, pierwszy log z błędem i końcowy log. Liczba naprawionych błędów algorytmicznych końcowego rozwiązania: 1.
+
+7. Faktoryzacja i wielkość tablicy
+
+Faktoryzacja: Miller-Rabin rozpoznaje liczby pierwsze, a rho Pollarda/Brenta rozdziela liczby złożone. Nie stosujemy dzielenia próbnego; wyjątkiem są szybkie sprawdzenia podzielności przez 2 i 3. MR ma deterministyczne zestawy baz do 2^64 i do 318665857834031151167461, co obejmuje wszystkie dane tej pracy. Powyżej drugiej granicy kod używa 32 losowych baz i opisuje wynik jako probabilistyczny [2].
+
+BSGS: usunięto LIMIT_TABLICY. Wielkość m = ⌈√n⌉ wynika wyłącznie z rzędu n. bsgs_plan(n) podaje liczbę wpisów i jawny szacunek 128 B/wpis. Nie obiecuje to dostępności pamięci. Dla Z4 m = 5 815 080 011; pełnego BSGS nie uruchamiano.
+
+8. Sprawdzalność
+
+Audyt potwierdził liczbę rekordów, unikalność, potęgowania, zgodność stdout z JSONL i wszystkie zapisane SHA-256. Kod nie zmienił się w trakcie końcowego biegu. Pierwszość danych i warunek bezpiecznej liczby pierwszej sprawdzono dodatkowo niezależnym SymPy 1.14.0. Samo rozwiązanie i główne testy nie wymagają SymPy.
+
+G5 / MODELE, SPRZĘT I LOGI
+
+Pochodzenie wyników
+
+9. Dwie nowe, niezależne próby modeli
+
+Identyfikator wywołania | Zadany tryb | Wyniki | Poprawki kodu
+
+gpt-6.1-sol | high | 4/4 | 0
+
+gpt-6-sol | high | 4/4 | 0
+
+Oba modele otrzymały ten sam prompt zapisany w prompt.txt. Każdy przygotował własny kod, zapisany przed uruchomieniem. Dołączono źródło, pełne stdout/stderr, komendę, kod wyjścia 0, SHA-256 i metadane. Próby nie czytały swoich rozwiązań. W tej małej próbie oba modele są równorzędne pod względem poprawności.
+
+Ograniczenie historyczne: dawnych surowych kodów i logów obu prób nie zachowano. Nowe próby nie są przedstawiane jako odzyskane stare uruchomienia. Oryginalna paczka i opis braków są w historia/. Dokładne wykonanie historycznej części punktu 5 pozostaje nieweryfikowalne.
+
+Wersja modelu: znane są powyższe identyfikatory wywołań i ustawienie high. Dokładny snapshot/build i rzeczywisty wewnętrzny wariant nie są udostępnione; zapisano null. Nie podano wymyślonej wersji. Jeden problem środowiska w próbie gpt-6.1-sol wystąpił przed wykonaniem kodu i został osobno opisany w metadanych.
+
+10. Znaczniki czasu - 12.11.2026, Europe/Warsaw
+
+Zdarzenie | Początek | Koniec
+
+Proces kodu gpt-6.1-sol | 14:57:21,065 | 14:57:23,086
+
+Proces kodu gpt-6-sol | 14:57:27,223 | 14:57:28,891
+
+Pierwszy pełny bieg, 1 błąd | 15:00:55,831 | 15:02:15,664
+
+Pełny bieg po poprawce | 15:04:50,106 | 15:06:03,266
+
+Końcowy bieg trwał 73,160 s. Logi zawierają także UTC, nanosekundy zegara monotonicznego i czas każdej metody. Czasy procesów modeli nie mierzą całego generowania odpowiedzi. Dziennik pracy automatycznej: logi/praca.jsonl. Roboczogodziny osób nie zostały podane.
+
+11. Środowisko pomiaru
+
+CPU: Intel Xeon Platinum 8573C, raportowane około 2,30 GHz; 9 widocznych procesorów logicznych, affinity 0-8. RAM: widoczne 10 206 468 KiB, około 9,73 GiB. System: Linux 6.18.57, x86_64, glibc 2.41. Python: 3.12.14. Osobne limity kontenera nie były udostępnione. Są to zasoby widoczne w środowisku, nie gwarancja dedykowanego sprzętu. Szczegóły: sprzet.json.
+
+12. Najważniejsze pliki i uruchomienie
+
+Kod: algorytmy.py; uruchom_testy.py. Końcowe logi: logi/bieg_po_poprawce/. Próby modeli: proby_modeli/. Kontrola logów: sprawdz_logi.py.
+Uruchom: python uruchom_testy.py --suite all
+Tylko Z1-Z4: python uruchom_testy.py --suite zadania. Nowe biegi zapisują nowe katalogi.
+
+Źródła
+
+[1] Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, rozdz. 3: algorytmy faktoryzacji, BSGS, rho i PH.
+[2] Oficjalny kod SymPy, primetest.py: zakresy deterministycznego Millera-Rabina.
+Dane zadań: załączone polecenie Kryptologia lab04_zadania.pdf. Wyniki i czasy: własne wykonania zapisane w logach.

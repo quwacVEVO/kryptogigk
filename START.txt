@@ -1,0 +1,109 @@
+G5 - UZUPEŁNIONE ROZWIĄZANIE Z1-Z4
+=================================
+
+NAJPIERW OTWÓRZ
+sprawozdanie.pdf - 4 strony: wyniki, czasy, wykres skalowania, testy i metadane.
+
+URUCHOMIENIE (Python 3.9 lub nowszy)
+Po wypakowaniu paczki otwórz terminal w tym folderze.
+
+Tylko zadania Z1-Z4:
+    python uruchom_testy.py --suite zadania
+
+Wszystkie zadania, testy i skalowanie:
+    python uruchom_testy.py --suite all
+
+Tylko 371 + 256 instancji i testy arytmetyki:
+    python uruchom_testy.py --suite testy
+
+Tylko skalowanie 16-40 bitów:
+    python uruchom_testy.py --suite skalowanie
+
+Ponowne sprawdzenie dołączonych logów, bez ponawiania ataków:
+    python sprawdz_logi.py logi/bieg_po_poprawce
+
+Kod algorytmów i testów nie wymaga dodatkowych bibliotek. SymPy jest opcjonalne
+wyłącznie dla dodatkowej niezależnej kontroli pierwszości w sprawdz_logi.py.
+W tym środowisku tę dodatkową kontrolę wykonano z SymPy 1.14.0.
+Na Windows bez bazy stref czasowych pozostają znaczniki UTC; Warsaw może być null.
+Pomiar RSS jest opcjonalny na systemach bez modułu resource.
+Nowe uruchomienia trafiają do nowego folderu uruchomienia/DATA_GODZINA.
+Nie zmieniaj katalogu dołączonych pomiarów, jeśli chcesz zachować ich sumy kontrolne.
+
+WYNIKI a
+Z1 = 1234
+Z2 = 70205663
+Z3 = 640639186538
+Z4 = 28938741015890190500
+
+METODY
+brute_force - atak siłowy, wykonany dla Z1-Z2.
+bsgs        - metoda Shanksa, wykonana dla Z1-Z3.
+rho         - samodzielne rho Pollarda dla logarytmu, wykonane dla Z1-Z3.
+ph_bsgs     - Pohlig-Hellman z BSGS w podgrupach, Z1-Z4.
+ph_rho      - Pohlig-Hellman z rho w podgrupach, Z1-Z4.
+PH + BSGS i PH + rho są dwoma wariantami tego samego schematu PH.
+PH + rho nie wywołuje BSGS. Przypadki h=1 i rząd<=2 są sprawdzane bez spaceru.
+
+WYNIKI KOŃCOWEJ SERII
+Zadania: 48/48 uruchomień poprawnych (po 3 powtórzenia).
+371 instancji: 1855/1855 wyników poprawnych (5 solwerów).
+256 różnych pseudolosowych instancji: 1280/1280 wyników poprawnych.
+Regresja naprawionego błędu: 22/22.
+Kontrole Millera-Rabina i faktoryzacji: 23/23.
+Skalowanie: 21 bezpiecznych liczb pierwszych, po 3 na 16,20,24,28,32,36,40 bitów.
+94/105 pomiarów skalowania zakończono poprawnie. Pozostałe 11 to przekroczenia
+limitu około 2 s przez atak siłowy. To nie są ukończone obliczenia.
+BSGS, rho i oba warianty PH ukończyły po 21/21 instancji skalowania.
+
+KOD I LOGI
+algorytmy.py - funkcje z polskimi komentarzami, także MR + rho faktoryzacji.
+uruchom_testy.py - generowanie danych, wykonanie i pełne logowanie.
+sprawdz_logi.py - audyt liczby wyników, potęgowań, plików i SHA-256.
+logi/bieg_po_poprawce/ - KOŃCOWY bieg, w tym pełne pliki JSONL.
+logi/bieg_po_poprawce/surowe/ - stdout/stderr każdego izolowanego pomiaru.
+logi/bieg_po_poprawce/dane_*.json - komplet wszystkich instancji i ziaren.
+logi/bieg_po_poprawce/metadata.json - czasy, limity i hashe kodu/danych/logów.
+logi/bieg_po_poprawce/audyt.json - wynik niezależnej kontroli zapisanych logów.
+logi/pelny_bieg/ - PIERWSZA seria, przed poprawką; zawiera 1 wykryty błąd rho.
+logi/regresja_rho.jsonl - pełny log testu naprawionego przypadku.
+logi/konsola*.log i *.stderr - pełne wyjście obu głównych uruchomień.
+logi/praca.jsonl - znaczniki etapów pracy automatycznej, nie roboczogodziny osób.
+
+Każdy rekord JSONL to jeden test konkretnej metody. Zawiera parametry p,g,h,n,
+oczekiwane i znalezione a, wynik pow, status, czas, ziarno i statystyki algorytmu.
+Słowo timeout oznacza przerwanie bez wyniku. Nie zastępuj go zerowym czasem
+ani statusem poprawnego rozwiązania. Limity są kontrolowane okresowo.
+
+PRÓBY MODELI
+proby_modeli/gpt_6_1_sol/ i proby_modeli/gpt_6_sol/:
+  prompt.txt, rozwiazanie.py, run_trial.py, pełne stdout/stderr, metadata.json.
+  Dla GPT-6.1 Sol zachowano też source_v1.py. Nie było kolejnej wersji kodu.
+  Każdy model dostał identyczny wspólny prompt i pracował niezależnie.
+  Są to NOWE próby; kod źródłowy zachowano przed ich wykonaniem.
+  Próby modeli korzystają z SymPy. Ich ponowne uruchomienie wymaga SymPy.
+  Ustawiono model gpt-6.1-sol / gpt-6-sol i reasoning_effort=high.
+  Snapshot/build oraz wewnętrzny wariant są nieudostępnione, więc zapisano null.
+modele.json - zbiorczy opis dostępnych i niedostępnych metadanych.
+
+HISTORIA I JEDNA POPRAWKA
+historia/pierwotna_paczka.zip - zachowana wcześniejsza paczka.
+historia/STATUS.txt - uczciwy opis brakujących dawnych kodów i logów.
+historia/kod_przed_poprawka/ - źródła pierwszej nowej serii z błędem rho.
+Pierwsza seria ujawniła wadliwy podział spaceru dla podgrupy rzędu3 modulo307.
+Po losowaniu funkcji podziału przy każdym restarcie wykonano całą serię ponownie.
+Liczba naprawionych błędów algorytmicznych końcowej implementacji: 1.
+Nie zmienia to licznika 0 poprawek w dwóch niezależnych próbach modeli;
+były to osobne programy i osobne eksperymenty.
+Nie da się odzyskać dokładnych surowych artefaktów starych prób, których nie zapisano.
+371 przypadków też wykonano ponownie - nowy log nie jest historycznym oryginałem.
+
+SPRZĘT I CZAS
+sprzet.json - CPU, RAM, Python i ograniczenia widoczności środowiska.
+Intel Xeon Platinum 8573C, 9 widocznych CPU logicznych, około 9,73 GiB widocznego
+RAM, Linux x86_64, Python 3.12.14. Nie odczytano osobnych limitów kontenera.
+Wszystkie czasy programów to rzeczywiste pomiary. Daty są w UTC i Europe/Warsaw.
+Czasy procesów modeli nie oznaczają czasu generowania odpowiedzi.
+Nie wpisano fikcyjnych roboczogodzin osób ani nieudostępnionych wersji modeli.
+
+SHA256SUMS.txt zawiera sumy kontrolne plików w paczce.

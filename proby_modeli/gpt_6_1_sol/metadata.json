@@ -1,0 +1,52 @@
+{
+  "trial_kind": "new_independent_reproducible_trial",
+  "not_recovered_prior_trial": true,
+  "model_requested": "GPT-6.1 Sol",
+  "model_call_identifier": "gpt-6.1-sol",
+  "reasoning_effort_requested": "high",
+  "execution_mode": "independent_agent",
+  "model_snapshot": null,
+  "model_build": null,
+  "actual_internal_model_variant": null,
+  "unavailable_model_details_explanation": "Snapshot/build i rzeczywisty wewnętrzny wariant modelu nie są udostępnione w środowisku; nie zostały odgadnięte.",
+  "code_bug_fixes_count": 0,
+  "environment_problem_count": 1,
+  "environment_problems": [
+    {
+      "description": "Pierwsze wywołanie mkdir używało nieistniejącego workdir docelowego; proces nie powstał. Ponowiono z istniejącego katalogu nadrzędnego.",
+      "impact": "Brak wpływu na źródło i pomiary; nastąpiło przed zapisaniem i uruchomieniem rozwiązania."
+    }
+  ],
+  "source_versions": [
+    "source_v1.py"
+  ],
+  "source_sha256": "50fa1290987430e9d247424547211b1603ffe6f1354eab0b412a0fd63dde1732",
+  "prompt_sha256": "c4a9f8248e216ea0d24979cbdc72ac14f5683f646820ceb30fa0347b75af0e50",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sympy_version": "1.14.0",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-u",
+    "/workspace/scratch/b6bb73b95ea6/g5_uzupelnienie/proby_modeli/gpt_6_1_sol/rozwiazanie.py"
+  ],
+  "cwd": "/workspace/scratch/b6bb73b95ea6/g5_uzupelnienie/proby_modeli/gpt_6_1_sol",
+  "stdout_file": "stdout_v1.log",
+  "stderr_file": "stderr_v1.log",
+  "timeout_seconds": 120,
+  "source_saved_before_execution": true,
+  "utc_start": "2026-11-12T13:57:21.065415+00:00",
+  "monotonic_start_ns": 3173226868782,
+  "perf_counter_start_ns": 3173226869238,
+  "pid": 10,
+  "returncode": 0,
+  "timed_out": false,
+  "perf_counter_finish_ns": 3175247918649,
+  "monotonic_finish_ns": 3175247920327,
+  "utc_finish": "2026-11-12T13:57:23.086487+00:00",
+  "wall_seconds_perf": 2.021049411,
+  "source_sha256_after": "50fa1290987430e9d247424547211b1603ffe6f1354eab0b412a0fd63dde1732",
+  "stdout_sha256": "8b50b090f9f58c309ea2bf3d6270e3b401fd215a018903f005978f90d52c0108",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

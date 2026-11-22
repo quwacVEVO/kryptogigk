@@ -1,0 +1,13 @@
+REJESTR CZASU PRACY AUTOMATYCZNEJ
+Strefa dla czytelnika: Europe/Warsaw; pełne znaczniki UTC są w JSONL.
+
+2026-11-12T14:57:28.986448+01:00 | instrumentation_started
+2026-11-12T15:04:05.169003+01:00 | first_full_run_failed
+2026-11-12T15:04:49.347262+01:00 | rho_partition_fixed_full_rerun_started
+2026-11-12T15:09:49.123973+01:00 | final_run_and_audit_passed
+2026-11-12T15:12:06.816651+01:00 | artifacts_ready_for_delivery
+
+Pierwszy odczyt zegara w turze: 2026-11-12T14:54:41+01:00.
+Odstęp do gotowych plików: 1045.817 s.
+To czas kalendarzowy pracy automatycznej. Nie jest sumą czasu CPU ani roboczogodzinami członków grupy.
+Czasy procesów prób modeli, metod, testów i pomiarów są oddzielnie w metadanych i JSONL.

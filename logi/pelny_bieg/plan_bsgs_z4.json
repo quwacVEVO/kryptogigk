@@ -1,0 +1,10 @@
+{
+  "n": 33815155531460793490,
+  "m": 5815080011,
+  "entries": 5815080011,
+  "estimated_bytes": 744330241408,
+  "assumed_bytes_per_entry": 128,
+  "giant_steps_max": 5815080011,
+  "status": "not_run",
+  "reason": "Dla Z4 wykonano PH z dwoma solwerami. Pełny BSGS wymaga ogromnej pamięci."
+}

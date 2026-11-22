@@ -1,0 +1,15 @@
+{
+  "code_version": "2.1-rho-partition-fix",
+  "recorded_at_utc": "2026-11-12T14:09:49.124403+00:00",
+  "root_model_label": "GPT-6 Astra Pro (etykieta środowiska)",
+  "root_exact_model_snapshot": null,
+  "code_sha256": {
+    "algorytmy.py": "594451309520847230ed74f58b4d0e188398dc7042ec04d1db547aa4d4c06b11",
+    "uruchom_testy.py": "0ffb58b12201cb05e59d4da6a07f72daf9f5c260e94448c132ea16dbf4cce656",
+    "sprawdz_logi.py": "4cbd254ad84ab1e5e41158d29a6c2dc46e5b6d5649a1e6a658b47d398926a7ce"
+  },
+  "official_run": "logi/bieg_po_poprawce",
+  "earlier_failed_run": "logi/pelny_bieg",
+  "historical_artifacts": "historia/STATUS.txt",
+  "note": "Wersja kodu jest nazwą tego opracowania, nie wersją modelu."
+}
