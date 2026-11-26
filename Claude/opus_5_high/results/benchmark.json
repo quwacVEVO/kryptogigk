@@ -1,0 +1,253 @@
+{
+  "opis": "lab05 grupa 5 (GenAI) - wyniki jednego przebiegu, format do porównania modeli",
+  "model": {
+    "nazwa": "Claude Opus 5 (claude-opus-5), tryb Claude Code, effort=high",
+    "uwaga": "wersja modelu podana przez środowisko uruchomieniowe; nie weryfikowana niezależnie"
+  },
+  "srodowisko": {
+    "python": "3.14.7",
+    "implementacja": "CPython",
+    "system": "Linux 7.1.9-arch1-2",
+    "maszyna": "x86_64",
+    "procesor": "AMD Ryzen 5 7520U with Radeon Graphics",
+    "czas_przebiegu_s": 10.589
+  },
+  "parametry": {
+    "K": 200,
+    "przedzial": [
+      1,
+      1000
+    ],
+    "lfsr": {
+      "n": 16,
+      "odczepy": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "ziarno": 44257,
+      "mapowanie": "reject"
+    },
+    "lcg": {
+      "m": 65536,
+      "a": 25173,
+      "c": 13849,
+      "x0": 2026,
+      "mapowanie": "mod_reject"
+    },
+    "testy": {
+      "fermat_iteracje": 5,
+      "mr_iteracje": 5,
+      "ziarno_losowania": 12345
+    }
+  },
+  "testy_jednostkowe": {
+    "testow": 117,
+    "bledow": 0,
+    "niezaliczonych": 0,
+    "pominietych": 0,
+    "wynik": "OK"
+  },
+  "kontrola_bledow": {
+    "cases": 28,
+    "not_caught": 0,
+    "path": "results/error_handling.md"
+  },
+  "lfsr": {
+    "okres_stanu": 65535,
+    "ogon": 0,
+    "okres_wartosci": 12801,
+    "kolizje": 18,
+    "roznych_wartosci": 182,
+    "ziarno_ciagu_bez_kolizji": 2
+  },
+  "lcg": {
+    "okres_stanu": 65536,
+    "ogon": 0,
+    "okres_wartosci": 65000,
+    "kolizje": 22,
+    "roznych_wartosci": 178,
+    "hull_dobell_spelnione": true
+  },
+  "pierwszosc": {
+    "czasy_ns": {
+      "LFSR": {
+        "dzielenie": {
+          "n": 200,
+          "min_ns": 250,
+          "max_ns": 2605,
+          "mean_ns": 369.56,
+          "median_ns": 320.0
+        },
+        "Fermat": {
+          "n": 200,
+          "min_ns": 200,
+          "max_ns": 10069,
+          "mean_ns": 1488.53,
+          "median_ns": 275.5
+        },
+        "Miller-Rabin": {
+          "n": 200,
+          "min_ns": 210,
+          "max_ns": 6332,
+          "mean_ns": 1498.125,
+          "median_ns": 250.0
+        }
+      },
+      "LCG": {
+        "dzielenie": {
+          "n": 200,
+          "min_ns": 270,
+          "max_ns": 3787,
+          "mean_ns": 393.575,
+          "median_ns": 335.5
+        },
+        "Fermat": {
+          "n": 200,
+          "min_ns": 200,
+          "max_ns": 6272,
+          "mean_ns": 1587.95,
+          "median_ns": 801.5
+        },
+        "Miller-Rabin": {
+          "n": 200,
+          "min_ns": 210,
+          "max_ns": 6202,
+          "mean_ns": 1618.515,
+          "median_ns": 796.5
+        }
+      }
+    },
+    "trafnosc": {
+      "LFSR": {
+        "Fermat": {
+          "unikalnych": 182,
+          "pierwszych": 29,
+          "zlozonych": 153,
+          "pseudopierwszych": 0,
+          "pseudozlozonych": 0
+        },
+        "Miller-Rabin": {
+          "unikalnych": 182,
+          "pierwszych": 29,
+          "zlozonych": 153,
+          "pseudopierwszych": 0,
+          "pseudozlozonych": 0
+        }
+      },
+      "LCG": {
+        "Fermat": {
+          "unikalnych": 178,
+          "pierwszych": 36,
+          "zlozonych": 142,
+          "pseudopierwszych": 0,
+          "pseudozlozonych": 0
+        },
+        "Miller-Rabin": {
+          "unikalnych": 178,
+          "pierwszych": 36,
+          "zlozonych": 142,
+          "pseudopierwszych": 0,
+          "pseudozlozonych": 0
+        }
+      }
+    },
+    "mr_wplyw_iteracji": [
+      {
+        "s": 1,
+        "srednia_ns": 836.4,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 2,
+        "srednia_ns": 984.8,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 3,
+        "srednia_ns": 1191.6,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 5,
+        "srednia_ns": 1467.8,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 10,
+        "srednia_ns": 2256.2,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 20,
+        "srednia_ns": 3873.4,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 40,
+        "srednia_ns": 6655.0,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      }
+    ],
+    "fermat_wplyw_iteracji": [
+      {
+        "s": 1,
+        "srednia_ns": 689.4,
+        "pseudopierwszych": 3,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 2,
+        "srednia_ns": 834.1,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 3,
+        "srednia_ns": 1013.4,
+        "pseudopierwszych": 1,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 5,
+        "srednia_ns": 1319.4,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 10,
+        "srednia_ns": 2558.1,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 20,
+        "srednia_ns": 3751.8,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      },
+      {
+        "s": 40,
+        "srednia_ns": 6739.6,
+        "pseudopierwszych": 0,
+        "pseudozlozonych": 0
+      }
+    ]
+  },
+  "sumy_kontrolne_sha256": {
+    "lfsr_main": "b09960889dba43c20512f292f3ad300f6c7ecd5ec0cab25e41e83f8297ba4652",
+    "lfsr_unique": "078dff4b43095d1e52c594793a15854f388c04281c06ee5211b937f519c914e9",
+    "lfsr_raw_unique": "9ff6a6bc2e3ba3f8cf363491e22de7643246c5986433248bd7b5a455eaafa8b1",
+    "lcg_main": "890975bc13254d297522936d4228e01bb39b533d00fb50a47d5ea3f8d806084f",
+    "lcg_unique": "b552fa85f144ab8cd4735e0f70af7ebbe81b19a854ed840068380c45d241ca14",
+    "lcg_raw_unique": "e82f96a131ca096c399d69644c6514b0ddf77f104672f19ee7d5370d32005ddf"
+  }
+}

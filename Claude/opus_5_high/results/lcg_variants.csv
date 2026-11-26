@@ -1,0 +1,14 @@
+zestaw,m,a,c,x0,hull_dobell,ogon,okres_stanu,roznych_w_K,kolizje
+scenariusz główny,65536,25173,13849,2026,spełnione,0,65536,178,22
+"notatka, przykład",15,51,13,1,niespełnione (a - 1 podzielne przez każdy dzielnik pierwszy m),0,5,"m < span, mapowanie mod_reject niemożliwe",-
+ANSI C,2147483648,1103515245,12345,2026,spełnione,?,> 200000 (pomiar przerwany),181,19
+Borland C/C++,4294967296,22695477,1,2026,spełnione,?,> 200000 (pomiar przerwany),186,14
+Microsoft Visual C++,4294967296,214013,2531011,2026,spełnione,?,> 200000 (pomiar przerwany),181,19
+Microsoft Visual Basic,16777216,1140671485,12820163,2026,spełnione,?,> 200000 (pomiar przerwany),184,16
+Java,281474976710656,25214903917,11,2026,spełnione,?,> 200000 (pomiar przerwany),188,12
+"pełny okres, małe m",1024,5,1,7,spełnione,0,1024,200,0
+c = 0 (multiplikatywny),65536,25173,0,2026,"niespełnione (NWD(c, m) = 1; c > 0 (warunki Hull-Dobella dotyczą c > 0))",0,8192,106,94
+a = 1 (licznik modulo m),65536,1,13849,2026,spełnione,0,65536,200,0
+a = 0 (stała),65536,0,13849,2026,niespełnione (a - 1 podzielne przez każdy dzielnik pierwszy m; m podzielne przez 4 => a - 1 podzielne przez 4),1,1,1,199
+"a = 2, c = 0 (zbiega do 0)",65536,2,0,2026,"niespełnione (NWD(c, m) = 1; a - 1 podzielne przez każdy dzielnik pierwszy m; m podzielne przez 4 => a - 1 podzielne przez 4; c > 0 (warunki Hull-Dobella dotyczą c > 0))",15,1,15,185
+m nie jest potęgą 2,1000,21,3,7,spełnione,0,1000,200,0
